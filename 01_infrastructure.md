@@ -1,6 +1,6 @@
 # Infrastructure
 
-This document is a reference of all the apps maintained by the ember learning team. The main website [https://emberjs.com](https://emberjs.com) uses the [heroku static buildpack](https://github.com/heroku/heroku-buildpack-static) to proxy to various different sites via the [static.json](https://github.com/emberjs/website/blob/master/static.json) configuration file.
+This document is a reference of all the apps maintained by the ember learning team. The main website [https://emberjs.com][15] uses the [heroku static buildpack][14] to proxy to various different sites via the [static.json][16] configuration file.
 
 ## Overview
 
@@ -41,3 +41,6 @@ All our heroku apps are set to autodeploy `master` branch to their staging apps.
 [11]: https://devcenter.heroku.com/articles/pipelines
 [12]: https://devcenter.heroku.com/articles/github-integration-review-apps
 [13]: https://dashboard.heroku.com/teams/ember/apps
+[14]: https://github.com/heroku/heroku-buildpack-static
+[15]: https://emberjs.com
+[16]: https://github.com/emberjs/website/blob/master/static.json
