@@ -2,22 +2,27 @@
   "name": "handbook",
   "version": "1.0.0",
   "description": "Ember.JS Learning team handbook",
-  "main": "index.js",
-  "scripts": {
-    "test": "alex *.md && cat *.md | markdown-link-check"
+  "homepage": "https://github.com/ember-learn/handbook#readme",
+  "bugs": {
+    "url": "https://github.com/ember-learn/handbook/issues"
   },
+  "license": "MIT",
+  "author": "Sivakumar Kailasam <sivakumar.ur.friend@gmail.com>",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ember-learn/handbook.git"
   },
-  "author": "Sivakumar Kailasam <sivakumar.ur.friend@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ember-learn/handbook/issues"
+  "scripts": {
+    "test": "alex *.md && cat *.md | markdown-link-check"
   },
-  "homepage": "https://github.com/ember-learn/handbook#readme",
   "dependencies": {
-    "alex": "5.1.0",
+    "alex": "4.1.0",
     "markdown-link-check": "3.1.6"
+  },
+  "alex": {
+    "allow": [
+      "host-hostess"
+    ]
   }
 }

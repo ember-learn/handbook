@@ -11,24 +11,23 @@ ajv@^5.1.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-alex@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/alex/-/alex-5.1.0.tgz#9da0d5d84ea72ec7e3ff0443cb84b2fb5a8bcf87"
+alex@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/alex/-/alex-4.1.0.tgz#6c55580bb72d323d89e594681465f446cbbf1370"
   dependencies:
     meow "^3.3.0"
-    remark-frontmatter "^1.1.0"
     remark-message-control "^4.0.0"
-    remark-parse "^4.0.0"
+    remark-parse "^3.0.0"
     remark-retext "^3.0.0"
     retext-english "^3.0.0"
-    retext-equality "~3.2.0"
-    retext-profanities "~4.4.0"
+    retext-equality "^3.0.0"
+    retext-profanities "^4.0.0"
     unified "^6.1.0"
     unified-diff "^1.0.0"
-    unified-engine "^4.0.0"
+    unified-engine "^3.1.0"
     update-notifier "^2.1.0"
     vfile "^2.0.0"
-    vfile-reporter "^4.0.0"
+    vfile-reporter "^3.0.0"
     vfile-sort "^2.0.0"
 
 ansi-align@^2.0.0:
@@ -403,7 +402,7 @@ fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
 
-fault@^1.0.0, fault@^1.0.1:
+fault@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/fault/-/fault-1.0.1.tgz#de8d350dfd48be24b5dc1b02867e0871b9135092"
   dependencies:
@@ -443,6 +442,10 @@ from@~0:
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+
+function-bind@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -529,6 +532,12 @@ has-flag@^2.0.0:
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+
+has@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/has/-/has-1.0.1.tgz#8461733f538b0837c9361e39a9ab9e9704dc2f28"
+  dependencies:
+    function-bind "^1.0.2"
 
 hawk@~6.0.2:
   version "6.0.2"
@@ -1223,13 +1232,6 @@ registry-url@^3.0.3:
   dependencies:
     rc "^1.0.1"
 
-remark-frontmatter@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/remark-frontmatter/-/remark-frontmatter-1.2.0.tgz#67905d178c0fe531ed12c57b98759f101fc2c1b5"
-  dependencies:
-    fault "^1.0.1"
-    xtend "^4.0.1"
-
 remark-message-control@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/remark-message-control/-/remark-message-control-4.1.0.tgz#60bc7700a87381404c956dc04e688518d3830cff"
@@ -1238,11 +1240,12 @@ remark-message-control@^4.0.0:
     unified-message-control "^1.0.0"
     xtend "^4.0.1"
 
-remark-parse@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-4.0.0.tgz#99f1f049afac80382366e2e0d0bd55429dd45d8b"
+remark-parse@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-3.0.1.tgz#1b9f841a44d8f4fbf2246850265459a4eb354c80"
   dependencies:
     collapse-white-space "^1.0.2"
+    has "^1.0.1"
     is-alphabetical "^1.0.0"
     is-decimal "^1.0.0"
     is-whitespace-character "^1.0.0"
@@ -1316,9 +1319,9 @@ retext-english@^3.0.0:
     parse-english "^4.0.0"
     unherit "^1.0.4"
 
-retext-equality@~3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/retext-equality/-/retext-equality-3.2.0.tgz#65d20ed4958e977814c9e60cc3dbe741b36b9b35"
+retext-equality@^3.0.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/retext-equality/-/retext-equality-3.3.0.tgz#ddc64401548933026eea2d19c584b0147b23a580"
   dependencies:
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
@@ -1329,7 +1332,7 @@ retext-equality@~3.2.0:
     quotation "^1.0.1"
     unist-util-visit "^1.0.0"
 
-retext-profanities@~4.4.0:
+retext-profanities@^4.0.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/retext-profanities/-/retext-profanities-4.4.0.tgz#23cf67573132c02d2ac14101e7b31616505cd4f2"
   dependencies:
@@ -1606,15 +1609,16 @@ unified-diff@^1.0.0:
     git-diff-tree "^1.0.0"
     vfile-find-up "^2.0.0"
 
-unified-engine@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/unified-engine/-/unified-engine-4.0.1.tgz#9692aa97fd5c4ec36889779e12514bef8e863fc3"
+unified-engine@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/unified-engine/-/unified-engine-3.1.1.tgz#792541826df4e97b640ccdd90eca621356e4c9e7"
   dependencies:
     concat-stream "^1.5.1"
     debug "^2.2.0"
     fault "^1.0.0"
     fn-name "^2.0.1"
     glob "^7.0.3"
+    has "^1.0.1"
     ignore "^3.2.0"
     is-empty "^1.0.0"
     is-hidden "^1.0.1"
@@ -1624,8 +1628,8 @@ unified-engine@^4.0.0:
     parse-json "^2.2.0"
     to-vfile "^2.0.0"
     trough "^1.0.0"
-    vfile-reporter "^4.0.0"
-    vfile-statistics "^1.1.0"
+    vfile-reporter "^3.0.0"
+    vfile-statistics "^1.0.0"
     x-is-function "^1.0.4"
     x-is-string "^0.1.0"
     xtend "^4.0.1"
@@ -1759,21 +1763,21 @@ vfile-message@^1.0.0:
   dependencies:
     unist-util-stringify-position "^1.1.1"
 
-vfile-reporter@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/vfile-reporter/-/vfile-reporter-4.0.0.tgz#ea6f0ae1342f4841573985e05f941736f27de9da"
+vfile-reporter@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vfile-reporter/-/vfile-reporter-3.1.0.tgz#a9b398c5e6dcbc8a9a08e6cf425f092e86a37000"
   dependencies:
     repeat-string "^1.5.0"
     string-width "^1.0.0"
     supports-color "^4.1.0"
     unist-util-stringify-position "^1.0.0"
-    vfile-statistics "^1.1.0"
+    vfile-statistics "^1.0.0"
 
 vfile-sort@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vfile-sort/-/vfile-sort-2.1.0.tgz#49501c9e8bbe5adff2e9b3a7671ee1b1e20c5210"
 
-vfile-statistics@^1.1.0:
+vfile-statistics@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vfile-statistics/-/vfile-statistics-1.1.0.tgz#02104c60fdeed1d11b1f73ad65330b7634b3d895"
 

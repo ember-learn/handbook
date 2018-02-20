@@ -23,7 +23,7 @@ If the ember app is going to exist in a subpath of https://emberjs.com, e.g., ht
 
 ## Ember app requirements
 
-- Create a file with the name `Procfile` with the content below. This enables heroku to execute its [release phase][6] purge our fastly cache on deployments. In this script `FASTLY_PURGE_KEY` is the api token of any of the admins of our fastly account. If you're one of our fastly admin, you can create one under the [personal API tokens][7] page. `FASTLY_SERVICE_ID` is the service id of our app on fastly. You can find it by following [these instructions][8]
+- Create a file with the name `Procfile` with the content below. This enables heroku to run purge on our fastly cache on post build but just before deployment during its [release phase][6] . In this script `FASTLY_PURGE_KEY` is the api token of any of the admins of our fastly account. If you're one of our fastly admin, you can create one under the [personal API tokens][7] page. `FASTLY_SERVICE_ID` is the service id of our app on fastly. You can find it by following [these instructions][8]
 
 ```Procfile
 release: npm i -g fastly-cli && fastly purge-all -k $FASTLY_PURGE_KEY -s $FASTLY_SERVICE_ID
@@ -31,7 +31,7 @@ release: npm i -g fastly-cli && fastly purge-all -k $FASTLY_PURGE_KEY -s $FASTLY
 
 - In the `config/environment.js` file, after `rootURL` add two new fields `routerRootUrl` with value `/` and `apiHost` with value `''`. Override their values for production as shown in this [reference][14].
 - In `router.js` change `rootURL: config.rootURL` to `rootURL: config.routerRootURL`. This ensures internal links & redirection works as expected.
-- If your app fetches any static content from within the app then make sure you set the `host` of your ember data adapter with the `apiHost` from config. Follow the same if you have fetch/ajax calls with relative urls. In case the app uses prember then configure the host as shown in [deprecation app's application adapter][12].
+- If your app fetches any static content from within the app then make sure you set the `host` field of your ember data adapter with the `apiHost` from config. Follow the same if you have fetch/ajax calls with relative urls. In case the app uses prember then configure the host name as shown in [deprecation app's application adapter][12].
 - In your `ember-cli-build.js` set the `fingerprint` `prepend` value with the cdn url. See [`deprecation-app/ember-cli-build.js`][11] for reference.
 - Configure your `config/deploy.js` file's production target as shown in [this reference][13]
 
