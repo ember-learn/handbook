@@ -8,19 +8,32 @@ This document is a reference of all the apps maintained by the ember learning te
 |-------------------------------------|--------------------------------------|-----------------------------------------------|-------------------------------------------------------|
 | [emberjs/website][1]                | emberjs.com home page                | static site built on Middleman                |https://ember-website.herokuapp.com/                   |
 | [emberjs/rfcs][2]                   | RFC's page                           | static site generated from markdown by mdbook |https://emberjs.github.io/rfcs                         |
-| [ember-learn/ember-api-docs][3]     | Ember API docs                       | ember app                                     |https://ember-api-docs-frontend.global.ssl.fastly.net  |
-| [ember-learn/statusboard][4]        | Status of ember milestone projects   | ember app                                     |https://ember-learn.github.io/statusboard/             |
-| [ember-learn/deprecations-app][5]   | List deprecations in ember           | ember app                                     |https://deprecations-app-prod.herokuapp.com/           |
-| [ember-learn/builds][6]             | Shows ember releases                 | ember app                                     |                                                       |
-| [ember-learn/ember-help-wanted][7]  | TBD                                  | ember app                                     |https://ember-help-wanted.herokuapp.com/               |
+| [ember-learn/ember-api-docs][3]     | Ember API docs                       | ember app with fastboot running on express                                    |https://ember-api-docs-frontend.global.ssl.fastly.net  |
+| [ember-learn/statusboard][4]        | Status of ember milestone projects   | ember app with prember                                     |https://ember-learn.github.io/statusboard/             |
+| [ember-learn/deprecations-app][5]   | List deprecations in ember           | ember app  with prember                                    |https://deprecations-app-prod.herokuapp.com/           |
+| [ember-learn/builds][6]             | Shows ember releases                 | ember app                                      |                                                       |
+
+
+## Sub domains
+
+|   Repository                        | Purpose                              | Current tech                                  |  URL                                            |
+|-------------------------------------|--------------------------------------|-----------------------------------------------|-------------------------------------------------------|
+| [ember-learn/ember-help-wanted][7]  | List issues across ember repos that need community help                                  | ember app                                     |https://help-wanted.emberjs.com/               |
+| [ember-learn/guides-app][17]  | TBD                                  | ember app  with prember                                    |https://guides.emberjs.com/               |
+| [ember-learn/cli-guides-app][18]  | new ember-cli docs                                  | ember app  with prember                                    |https://ember-cli-guides.netlify.com/               |
+
 
 ## On hosting preferences
 
 [Heroku][8] sponsors our hosting & [Fastly][9] sponsors our CDN :heart:. While heroku does have [a fastly addon][10], for billing & maintenance reasons its easier to manage one fastly account with multiple service accounts configured in it. Heroku lets us have [pipelines][11] that enables us to have different environments like staging & production. It also lets us have review apps explained in the following section. We have hosted few apps directly on GitHub pages. These are apps where only content of the app is changed by internal teams that they don't require the sophisticated setup that the other apps enjoy.
 
-## Heroku review apps
+We've deployed apps prerendered with prember on [Netlify][19].
+
+## Review apps
 
 Heroku enables us to create [review apps][12] which are same as regular apps but lets us review changes in pull requests. They're automatically created when members with write access of a repo raise a PR (also depends on whether the pipeline is configured to auto-deploy). To create a review app for a PR raised by non-members, go to the heroku pipeline and manually create the review app. Review apps get deleted after few days of inactivity on the PR. They also get deployed only on successful builds on Travis.
+
+Creation & maintenance of review apps on netlify is automated & doesn't require manual intervention.
 
 ## Heroku deployment
 
@@ -44,3 +57,6 @@ All our heroku apps are set to autodeploy `master` branch to their staging apps.
 [14]: https://github.com/heroku/heroku-buildpack-static
 [15]: https://emberjs.com
 [16]: https://github.com/emberjs/website/blob/master/static.json
+[17]: https://github.com/ember-learn/guides-app
+[18]: https://github.com/ember-learn/cli-guides-app
+[19]: https://www.netlify.com/
