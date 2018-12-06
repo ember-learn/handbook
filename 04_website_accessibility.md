@@ -5,7 +5,7 @@ EmberJS is is committed to ensuring that its website is accessible to people wit
 ## Design
 
 These are the WCAG conformance criteria that will most likely apply to the Ember.js website.
-
+<!--alex ignore Color-->
 - 1.4.1 [Use of Color](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=141#distinguishable)
 - 1.4.3 [Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=141#contrast-minimum)
 - 1.4.4 [Resize Text](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=141%2C143%2C144#resize-text)
