@@ -14,6 +14,9 @@ As we move to use a consolidated Ember app for the website, we intend for the UR
 |   └── Learn Ember
 |       ├── Quick Start
 |       └── Tutorials
+|           ├── 101 (quick start)
+|           ├── 201 (rolodex)
+|           └── 301 (super rentals)
 ├── RELEASES
 |   ├── Channels
 |   |   ├── stable
