@@ -5,12 +5,18 @@ A Handbook of notes for the Ember Learning Core Team. This repo helps us track t
 
 ## Contents
 
+### Infrastructure
+
 - [infrastructure](infrastructure.md)
 - [heroku & fastly setup](infra_heroku_fastly_setup.md)
-- [website- sitemap](website_sitemap.md)
-- [website- accessibility](website_accessibility.md)
-- [website- seo](website_seo.md)
-- [website- design](website_design.md)
+- [domains](infra_domains.md)
+
+### Website
+
+- [sitemap](website_sitemap.md)
+- [accessibility](website_accessibility.md)
+- [seo](website_seo.md)
+- [design](website_design.md)
 
 ## Contributing
 
