@@ -6,12 +6,12 @@ The routes in the website should reflect this heirarchy. The exceptions are the 
 ```
 ├── INDEX (home)
 ├── DOCS
-|   ├── Ember.js Guides  - exception: guides.emberjs.com
-|   ├── ember-cli Guides - exception: cli.emberjs.com
-|   ├── (ember-data guides) - exception: data.emberjs.com
-|   ├── Ember.js API - exception: api.emberjs.com
-|   ├── (ember-cli API) - exception: cli-api.emberjs.com
-|   ├── (ember-data API) - exception: data-api.emberjs.com
+|   ├── Ember.js Guides  (sub-domain: guides.emberjs.com)
+|   ├── ember-cli Guides (sub-domain: cli.emberjs.com)
+|   ├── (ember-data guides) (sub-domain: data.emberjs.com)
+|   ├── Ember.js API (sub-domain: api.emberjs.com)
+|   ├── (ember-cli API) (sub-domain: cli-api.emberjs.com)
+|   ├── (ember-data API) (sub-domain: data-api.emberjs.com)
 |   └── Learn Ember
 |       ├── Quick Start
 |       └── Tutorials
@@ -23,22 +23,22 @@ The routes in the website should reflect this heirarchy. The exceptions are the 
 |   |   ├── stable
 |   |   ├── beta
 |   |   └── canary
-|   ├── Deprecations
+|   ├── Deprecations (sub-domain? deprecations.emberjs.com)
 |   |   ├── ember/:version/:deprecation-id
 |   |   ├── ember-cli/:version/:deprecation-id
 |   |   └── ember-data/:version/:deprecation-id
 |   └── Status Board
-├── BLOG
+├── BLOG (sub-domain: blog.emberjs.com)
 ├── COMMUNITY
 |   ├── The Ember.js Community
 |   ├── Guidelines
-|   ├── Contribute (GitHub)
+|   ├── Contribute (GitHub) (external link)
 |   ├── Help Wanted
 |   ├── Meetups
 |   |   ├── getting started
 |   |   └── resources & assets
-|   ├── Job Board
-|   ├── EmberConf
+|   ├── Job Board (external link)
+|   ├── EmberConf (external link)
 |   └── Annual Community Survey
 |       └── :year
 ├── ABOUT
