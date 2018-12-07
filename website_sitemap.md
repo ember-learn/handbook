@@ -3,6 +3,8 @@
 As we move to use a consolidated Ember app for the website, we intend for the URLs to appropriately reflect the data heirarchy. 
 The routes in the website should reflect this heirarchy. The exceptions are the places where it makes sense to use a subdomain instead of a child route. 
 
+Items in parenthesis () indicate that the item is planned but doesn't exist yet. 
+
 ```
 ├── INDEX (home)
 ├── DOCS
