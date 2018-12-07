@@ -5,12 +5,12 @@ As we move to use a consolidated Ember app for the website, we intend for the UR
 ```
 ├── INDEX (home)
 ├── DOCS
-|   ├── Ember.js Guides
-|   ├── ember-cli Guides
-|   ├── (ember-data guides)
-|   ├── Ember.js API 
-|   ├── (ember-cli API)
-|   ├── (ember-data API)
+|   ├── Ember.js Guides  - exception: guides.emberjs.com
+|   ├── ember-cli Guides - exception: cli.emberjs.com
+|   ├── (ember-data guides) - exception: data.emberjs.com
+|   ├── Ember.js API - exception: api.emberjs.com
+|   ├── (ember-cli API) - exception: cli-api.emberjs.com
+|   ├── (ember-data API) - exception: data-api.emberjs.com
 |   └── Learn Ember
 |       ├── Quick Start
 |       └── Tutorials
