@@ -12,9 +12,9 @@ Items in parenthesis () indicate that the item is planned but doesn't exist yet.
 |   ├── ember-cli Guides (sub-domain: cli.emberjs.com)
 |   ├── (ember-data guides) (sub-domain: data.emberjs.com)
 |   ├── API (sub-domain: api.emberjs.com)
-|   ├── Ember.js API
-|   ├── (ember-cli API) (currently: https://ember-cli.com/api/)
-|   ├── (ember-data API)
+|   |   ├── Ember.js API
+|   |   ├── Ember Data
+|   |   └── (ember-cli API) (currently: https://ember-cli.com/api/)
 |   ├── Learn Ember
 |   └── Tutorials
 |       ├── 101 Quick Start
