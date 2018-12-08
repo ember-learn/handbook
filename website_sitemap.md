@@ -11,12 +11,15 @@ Items in parenthesis () indicate that the item is planned but doesn't exist yet.
 |   ├── Ember.js Guides  (sub-domain: guides.emberjs.com)
 |   ├── ember-cli Guides (sub-domain: cli.emberjs.com)
 |   ├── (ember-data guides) (sub-domain: data.emberjs.com)
-|   ├── Ember.js API (sub-domain: api.emberjs.com)
-|   ├── (ember-cli API) (sub-domain: cli-api.emberjs.com)
-|   ├── (ember-data API) (sub-domain: data-api.emberjs.com)
-|   └── Learn Ember
-|       ├── Quick Start
-|       └── Tutorials
+|   ├── API (sub-domain: api.emberjs.com)
+|   ├── Ember.js API
+|   ├── (ember-cli API) (currently: https://ember-cli.com/api/)
+|   ├── (ember-data API)
+|   ├── Learn Ember
+|   └── Tutorials
+|       ├── 101 Quick Start
+|       ├── 201 Contact Book
+|       └── 201 Super Rentals
 |           ├── 101 (quick start)
 |           ├── 201 (rolodex)
 |           └── 301 (super rentals)
