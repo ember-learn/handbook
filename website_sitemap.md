@@ -15,14 +15,11 @@ Items in parenthesis () indicate that the item is planned but doesn't exist yet.
 |   |   ├── Ember.js API
 |   |   ├── Ember Data
 |   |   └── (ember-cli API) (currently: https://ember-cli.com/api/)
-|   ├── Learn Ember
-|   └── Tutorials
-|       ├── 101 Quick Start
-|       ├── 201 Contact Book
-|       └── 201 Super Rentals
-|           ├── 101 (quick start)
-|           ├── 201 (rolodex)
-|           └── 301 (super rentals)
+|   └── Learn Ember
+|       └── Tutorials
+|           ├── 101 Quick Start
+|           ├── 201 Contact Book
+|           └── 201 Super Rentals
 ├── RELEASES
 |   ├── Channels
 |   |   ├── stable
