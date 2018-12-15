@@ -20,7 +20,7 @@ This document is a reference of all the apps maintained by the ember learning te
 |-------------------------------------|--------------------------------------|-----------------------------------------------|-------------------------------------------------------|
 | [ember-learn/ember-help-wanted][7]  | List issues across ember repos that need community help                                  | ember app                                     |https://help-wanted.emberjs.com/               |
 | [ember-learn/guides-app][17]  | TBD                                  | ember app  with prember                                    |https://ember-guides-prod.herokuapp.com/               |
-| [ember-learn/cli-guides-app][18]  | new ember-cli docs                                  | ember app  with prember                                    |https://ember-cli-guides.netlify.com/               |
+| [ember-learn/cli-guides][18]  | new ember-cli docs                                  | ember app  with prember                                    |https://ember-cli-guides.netlify.com/               |
 
 
 ## On hosting preferences
@@ -58,5 +58,5 @@ All our heroku apps are set to autodeploy `master` branch to their staging apps.
 [15]: https://emberjs.com
 [16]: https://github.com/emberjs/website/blob/master/static.json
 [17]: https://github.com/ember-learn/guides-app
-[18]: https://github.com/ember-learn/cli-guides-app
+[18]: https://github.com/ember-learn/cli-guides
 [19]: https://www.netlify.com/
