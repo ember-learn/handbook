@@ -5,6 +5,9 @@ A Handbook of notes for the Ember Learning Core Team. This repo helps us track t
 
 ## Contents
 
+### Team Organization
+- [weekly meeting leadership](team-leadership.md)
+
 ### Infrastructure
 
 - [infrastructure](infrastructure.md)
