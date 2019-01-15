@@ -13,6 +13,7 @@ There have been some exceptions to this rule in the past:
 - Documentation that is missing and is not documented anywhere else
   - a good example for both of these points was the [PR adding Optional Features documentation](https://github.com/ember-learn/guides-source/pull/64)
 - Fixes to broken links
+- Fixes to typos
 - Fixes to 404s or anything that would affect SEO
 
 All planned exceptions to this rule **must** be agreed to by the Learning Team and **should** be agreed in a weekly meeting before any work commences
