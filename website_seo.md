@@ -2,7 +2,7 @@
 
 We will employ standard SEO techniques (as standard as we can, since they seem to change over time)
 
-- We will use standard “semantic web” and Accessibility - these also support SEO. (Use of <h1> tags for example)
+- We will use standard “semantic web” and Accessibility - these also support SEO. (Use of &lt;h1&gt; tags for example)
 - As most SEO things are rule of thumb we need to be constantly tracking our ranking and running “experiments” to improve our rankings for specific keywords
   [ ] create to-do list for how to track our ranking, to include method for sending regular reports to a place where they can be reviewed by the learning team
   [ ] plan running experiments to improve rankings for specific keywords
