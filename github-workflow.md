@@ -18,6 +18,8 @@ The review should be requested for at least one of the lead project maintainers.
 For example, `ember-styleguide`'s needs, goals, and active team are very
 different from the Guides, and reviews are a chance to make sure that
 the project's goals are being met and varying standards are upheld.
+In cases of conflicting reviews, the decision should be brought to the
+team for consensus.
 
 For major changes, such as rearranging the flow of an app, 
 creating new views/subpages, changing many lines, substantive styling changes,
