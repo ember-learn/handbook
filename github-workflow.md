@@ -11,9 +11,13 @@ For very minor changes (typos, wording edits affecting one sentence, etc) a
 community member's review is enough. Reviews are a great opportunity to
 get more people involved in Ember!
 
-For more significant changes, a core team member's review is required. Examples
-include restructuring a paragraph, adding a brand new paragraph or example,
+For more significant changes, a core team member's review is required. 
+Examples include restructuring a paragraph, adding a brand new paragraph or example,
 confirming that a bugfix doesn't break something else, etc.
+The review should be requested for at least one of the lead project maintainers.
+For example, `ember-styleguide`'s needs, goals, and active team are very
+different from the Guides, and reviews are a chance to make sure that
+the project's goals are being met and varying standards are upheld.
 
 For major changes, such as rearranging the flow of an app, 
 creating new views/subpages, changing many lines, substantive styling changes,
