@@ -51,9 +51,22 @@ previously reviewed. An example is tagging and versioning. These should
 also be announced in the core team channel.
 
 If the GitHub permission rules must be edited to apply one of the above,
-they should be put back when an Admin is finished. For example,
-most repositories have "review required" checked, and
-"Enforce rules for admins" checked.
+they should be put back when an Admin is finished.
+
+### How to override reviews
+
+When necessary, here's how to override reviews. Not all members will have
+this ability.
+
+1. Remember to announce in the team channel what you are doing,
+and seek a review if possible one last time.
+2. Go to the project's settings
+3. Choose Branches
+4. Choose to edit "master" under Branch protection
+5. Uncheck "Include administrators"
+6. Do your work
+6. Reenable "Include administrators" and also confirm that
+"Require reviews before merging" is still checked.
 
 ## When to follow these rules for new projects
 
