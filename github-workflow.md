@@ -1,6 +1,6 @@
 # GitHub workflow
 
-This doc describes the GitHub workflow process and permissions rules for our team. 
+This document describes the GitHub workflow process and permissions rules for our team. 
 It does not apply to undeployed apps that are in greenfield development.
 
 ## Reviews
@@ -49,8 +49,8 @@ Anything that can wait for a review, should.
 Admins should not use their ability to merge without reviews unless the
 following circumstances arise:
 
-1. It's an emergency hotfix (something is quite broken, like not rendering at all, 
-and the person has high confidence in their fix). Hotfixes should be announced
+1. It's an emergency hotfix: something is quite broken, like not rendering at all, 
+and the person has high confidence in their fix. Hotfixes should be announced
 in the core team channel.
 2. It's part of normal, documented deployment process of code that has been
 previously reviewed. An example is tagging and versioning. These should
