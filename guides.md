@@ -17,3 +17,13 @@ There have been some exceptions to this rule in the past:
 - Fixes to 404s or anything that would affect SEO
 
 All planned exceptions to this rule **must** be agreed to by the Learning Team and **should** be agreed in a weekly meeting before any work commences
+
+## Table of Contents for Guides
+
+The following rules of thumb help us organize content. They apply to all Guides (CLI, Ember.js, Ember Data, etc).
+
+1. The Guides should show how pieces fit together, not repeat content from the API docs. If a lot of description is given for one single feature, as it works in isolation, it's a sign that it belongs in API docs and should just have a link to it from the Guides.
+2. We do our best to give new pages names that match their general web development concept, rather than Ember-specific implementation names.
+3. We aim to help our existing users find and understand Editions. As syntax changes across the board, it's important to give people easy access to materials that help them get up to speed quickly, as well as give newcomers a clue of how to translate older code samples from articles and Q&A into the latest and greatest approach. For Ember.js, these conversion guides will be kept in `Upgrading/Editions`, which contains content that will change as Ember grows and new features land. This guide can be linked to from throughout the rest of the Guides, rather than including much conversion content inline. This means that the new user experience is not cluttered with older syntax, but all users can still follow the trail when they need to.
+3. The Guides should be able to be read like a book, providing a thoughtful order that builds upon previous knowledge. Topics that are foundational for understanding other sections should go earlier in the list.
+4. We follow [RFC 431](https://github.com/emberjs/rfcs/pull/431) in order to improve the Guides learning experience. We aim to keep working to improve the learning flow after reaching MVP, and the RFC should not be considered "feature complete." After MVP is close to being reached, more RFCs should be proposed.
