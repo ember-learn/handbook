@@ -11,9 +11,9 @@ Currently, Todd has been facilitating meetings, with Mel as the backup. One way 
   - Create a document using the `Learn Team Agenda 2019-MM-DD` template
   - Add link to previous week's meeting
   - Update the "Every Timezone" link
-- post the link in the core-learning channel description. We don't share the link in public chat channels. Once the meeting has started, we share link to the video call in the public channel. Then we share the agenda with the attendees via the video chat interface.
+- post the link in the #core-learning channel description. We don't share the link in public chat channels. Once the meeting has started, we share link to the video call in the public channel. Then we share the agenda with the attendees via the video chat interface.
 - act as the meeting facilitator (leading the discussion, ensuring that we stay on track with the agenda & conversation)
-- extract the public notes and submit them to the GitHub repository for core team notes
+- extract the public notes and submit them to the [GitHub repository for core team notes](https://github.com/emberjs/core-notes)
 - synthesize the to-do items into issues in the relevant GitHub repository for tracking
 
 
