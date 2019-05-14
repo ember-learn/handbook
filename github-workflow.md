@@ -28,6 +28,25 @@ merging. Consensus can be gathered either by GitHub PR reviews, as
 decided and recorded in the learning team meetings, as discussed in the
 team chat, via RFC, or by approving comments on a Quest issue.
 
+### Guidelines for merging PRs
+
+Each project may choose to enforce up-to-date branches as a
+requirement on GitHub, or not. However, some basic
+guidelines apply if it is not enforced.
+
+For major updates (PRs that change multiple lines or formatting), the PR should be
+made up-to-date with `master` before merge. This can either be done
+by a contributor or a maintainer. It's always ok to ask for someone to do this.
+
+For small fixes (typos, changes to one sentences, etc), an
+up-to-date branch is not required for merging.
+This is to speed up maintainer tasks, since you would otherwise have to
+wait for the whole test suite to run before merging.
+
+Maintainers should use their best judgement about whether to
+update a branch before merging.
+CI will catch truly broken code things,
+but only we can make sure that prose doesn't get jumbled.
 
 ### RFCs
 
