@@ -39,7 +39,8 @@ Community Maintainers are especially welcomed to our weekly team meetings, but n
 
 ## Process
 
-- The Learning Team may invite community members to help maintain a specific app
+- The Learning Team may invite community members to help maintain a specific app.
+Adding someone new is discussed internally and requires consensus of the Learning Core Team members.
 - The Community Maintainer is paired with a member of the core team (the buddy system)
 - If the website shows the working groups/strike teams, the contributor would be added to that list if they want to be.
 - They meet to go over responsibilities and answer any questions, and then pair a few PR reviews
