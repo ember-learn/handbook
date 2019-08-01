@@ -1,6 +1,6 @@
 # Community maintainers
 
-Ember Learning Core Team manages so many resources that if we want to scale and improve the quality of our sites, we need the help of more people than just core team members!
+The Ember Learning Core Team manages so many resources that if we want to scale and improve the quality of our sites, we need the help of more people than just core team members!
 
 A Community Maintainer is a volunteer who plays a key role in the Ember learning experience.
 In most cases, they are people who have already led specific projects themselves or are long-term collaborators on an initiative.
