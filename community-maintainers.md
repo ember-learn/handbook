@@ -26,7 +26,7 @@ Read more about these roles [here](https://help.github.com/en/articles/repositor
 
 Community Maintainers are especially welcomed to our weekly team meetings, but not expected to attend every week. It is ok for participation to be cyclical. Responsibilities include:
 
-- Respond to contributions in a way that is kind and helpful. Contributors view maintainers as the face of Ember, regardless of your role or involvement.
+- Respond to contributions in a way that is kind and helpful. Contributors view maintainers as the face of Ember, regardless of your role or involvement
 - Follow the Ember Code of Conduct
 - Communicate with the core team point person about any big changes
 - Ask the core team for clarification whenever in doubt
@@ -41,9 +41,9 @@ Community Maintainers are especially welcomed to our weekly team meetings, but n
 
 - The Learning Team may invite community members to help maintain a specific app.
 Adding someone new is discussed internally and requires consensus of the Learning Core Team members.
-- The Community Maintainer is paired with a member of the core team (the buddy system)
+- The Community Maintainer is paired with a member of the core team (the buddy system).
 - If the website shows the working groups/strike teams, the contributor would be added to that list if they want to be.
-- They meet to go over responsibilities and answer any questions, and then pair a few PR reviews
+- They meet to go over responsibilities and answer any questions, and then pair a few PR reviews.
 - Once a month, the core team member and Community Maintainer chat about any developments in the project. If time zones allow, this is part of a Learning Team meeting.
 - Maintainers who are inactive for more than 6 weeks may have permissions removed and may be removed from the working group listing on the public website. This serves to safeguard the security of our sites and keep development aligned with team goals (i.e. you have to be somewhat in the loop in order to make good judgement calls and represent the work being done).
 - Repeated communication missteps with the community or core team may result in removal.
