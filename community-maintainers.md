@@ -45,5 +45,5 @@ Adding someone new is discussed internally and requires consensus of the Learnin
 - If the website shows the working groups/strike teams, the contributor would be added to that list if they want to be.
 - They meet to go over responsibilities and answer any questions, and then pair a few PR reviews
 - Once a month, the core team member and Community Maintainer chat about any developments in the project. If time zones allow, this is part of a Learning Team meeting.
-- Maintainers who are inactive for more than 6 weeks may have permissions removed, in order to safeguard the security of our sites and keep development aligned with team goals (i.e. you have to be somewhat in the loop in order to make good judgement calls).
+- Maintainers who are inactive for more than 6 weeks may have permissions removed and may be removed from the working group listing on the public website. This serves to safeguard the security of our sites and keep development aligned with team goals (i.e. you have to be somewhat in the loop in order to make good judgement calls and represent the work being done).
 - Repeated communication missteps with the community or core team may result in removal.
