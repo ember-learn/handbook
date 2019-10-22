@@ -882,8 +882,8 @@ markdown-link-extractor@^1.1.1:
     marked "^0.3.9"
 
 marked@^0.3.9:
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.15.tgz#de96982e54c880962f5093a2fa93d0866bf73668"
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
 
 mdast-comment-marker@^1.0.0:
   version "1.0.2"
