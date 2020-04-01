@@ -1,4 +1,4 @@
-# Draft - Public Meeting Media
+# Public Meeting Media
 
 ## Meeting Notes
 
