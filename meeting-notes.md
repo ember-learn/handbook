@@ -3,6 +3,7 @@
 ## Meeting Notes
 
 Proposal - We will create a public Notion Workspace that is for Learning Team meeting notes, possible subteam meeting notes, and draft proposals. We will continue to upload these notes to the GitHub notes repo after each meeting.
+At the discretion of the Learning Team, some meetings may still have private notes. This should be rare.
 
 ### Q&A
 
