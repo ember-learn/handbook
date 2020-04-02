@@ -18,7 +18,7 @@ Meetings are open to all members of the Ember Community unless otherwise specifi
 
 ## Areas of Responsibility
 
-- infrastructure
+- infrastructure & tooling
 - guides/api docs/tutorials
 - website & outreach
 - ember times
