@@ -14,7 +14,7 @@ Instead of a rotating facilitator, we will move back to a single facilitator wit
 
 ### Attendance
 
-All Learning Core Team members should make every attempt to attend their weekly AOR meeting and monthly all-hands meeting. Lack of attendance is one of the indicators that a team member should consider becoming an emeritus. 
+All Learning Core Team members should make every effort to attend their weekly AOR meeting and monthly all-hands meeting. Lack of attendance is one of the indicators that a team member should consider becoming an emeritus. 
 
 Meetings are open to all members of the Ember Community unless otherwise specified. 
 
@@ -25,6 +25,8 @@ We have identified four areas of responsibility in the Learning Core Team:
 - guides/api docs/tutorials
 - website & outreach
 - ember times
+
+All branding-related questions will be sent to the Steering Committee for review.
 
 ## Other
 
