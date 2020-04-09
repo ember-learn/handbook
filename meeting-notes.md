@@ -5,6 +5,7 @@
 Proposal - For Learning Team-related meetings that are open to the public, we will take our notes and create agendas directly in GitHub.
 This allows our many collaborators to have immediate access to notes if they missed a meeting or like to skim the notes to stay up-to-date.
 It also allows anyone to propose a discussion topic.
+We take notes this way in order to include more open source contributors around the world, with varying work-life responsibilities and levels of participation.
 
 ### Process
 
