@@ -13,7 +13,8 @@ Prior to a meeting, a team member creates a PR in the [core-notes](https://githu
 Others may add GitHub Suggestions in order to add to the agenda.
 The meeting facilitator merges those suggestions, and then takes notes.
 If anyone needs to share a link or resource during the meeting, they can add a comment or suggestion.
-At the end of the meeting, the facilitator commits and merges the notes.
+At the end of the meeting, the facilitator commits and merges the notes themselves (optionally seeking a review first if they prefer).
+If any notes corrections/clarifications are needed, they can be done as additional PRs.
 They then create next week's PR.
 
 ### Q&A
