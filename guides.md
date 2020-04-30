@@ -62,3 +62,27 @@ A third level of nesting is only appropriate when there are:
 - There are more than 4 possible sub-pages to group together
 - The content has already been written, and user feedback indicates that it is too much for one article
 - The information is something that every Ember developer should be aware of (i.e. it belongs in the Guides)
+
+## Determining where content belongs
+
+There are three sets of Guides the team maintains:
+
+- [The Ember.js Guides](https://github.com/ember-learn/guides-source)
+- [The CLI Guides](https://github.com/ember-learn/cli-guides/)
+- [The Deprecation Guides](https://github.com/ember-learn/deprecation-app)
+
+This section describes some rules of thumb for determining where to put new content, or whether to relocate existing content.
+
+## The Ember Guides
+
+The Ember Guides are meant to cover the needs of the majority of Ember users. They focus on runtime features, but may have some build time information. If 80% of people who run `ember new` would need the information, it should be covered in the Guides. Deprecated features should not be shown in the latest version. The Guides are not meant to be exhaustive of Ember's features, but rather they read like a book and give you the "happy path" journey through building an app. In contrast, the API Docs are meant to cover all of Ember's features.
+
+In some cases, a feature may be omitted from the Guides until it has reached some level of improvements to tooling or coherence with a mental model, but this is decided on a case-by-case basis.
+
+## The Ember CLI Guides
+
+The Ember CLI Guides focus on build time concerns, CLI commands, blueprints, and addon development. The majority of build time concerns should be in the CLI guides, with the exception of essential information that someone would need when they are beginning their learning journey.
+
+## The Deprecation Guides
+
+These guides help developers overcome specific deprecations that they would see when they upgrade their apps. The content can include everything from links to codemods, to specific step-by-step instructions or copy-pastable replacements. The written content is largely driven by what is written in RFCs.
