@@ -62,4 +62,4 @@ The next release date is not affected by "delays", and should always be calculat
 <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
 <script src="https://button.glitch.me/button.js"></script>
 ```
-5. Edit `package.json` to explicitly include port 4200: ` "start": "ember serve -p 4200"`
+5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`
