@@ -52,7 +52,7 @@ The next release date is not affected by "delays", and should always be calculat
 
 ## Glitch Ember starter
 
-1. Go to https://glitch.com/edit/console.html?ember
+1. Go to [https://glitch.com/edit/console.html?ember](https://glitch.com/edit/console.html?ember)
 2. Update the local [ember-new-output](https://github.com/ember-cli/ember-new-output) repository
 3. `git checkout` the relevant release version
 4. Include the following snippet for the Glitch button in `app/index.html`
