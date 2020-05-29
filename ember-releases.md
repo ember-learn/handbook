@@ -12,7 +12,7 @@ These are:
 
 ## Guides
 
-Instructions are found in [MAINTENERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
+Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
 
 ## API documentation
 
