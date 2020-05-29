@@ -35,7 +35,7 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
 
 **NOTE** ember-source, ember-data, and ember-cli must already be released.
 
-1. Go to https://github.com/ember-learn/ember-blog/pulls
+1. Go to [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
 2. Merge the relevant blog post once it is OKed by all the team representatives.
 
 ## Release pages
