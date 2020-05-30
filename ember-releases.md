@@ -8,7 +8,7 @@ These are:
 - API documentation
 - Release blog post
 - Release page (index, stable, beta, LTS)
-- [Glitch Ember starter](https://ember.glitch.me)
+- [Glitch Ember starter](https://emberjs.glitch.me)
 
 ## Guides
 
