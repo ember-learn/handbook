@@ -21,7 +21,7 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
     2. [ember.js](https://github.com/emberjs/ember.js/)
     3. [data](https://github.com/emberjs/data/)
 2. `cd ember-jsonapi-docs`
-3. Go to the heroku instance and put the following variables in your environment:
+3. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
     1. `AWS_ACCESS_KEY`
     2. `AWS_ACCESS_KEY_ID`
     3. `AWS_SECRET_ACCESS_KEY`
