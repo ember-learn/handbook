@@ -16,7 +16,7 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
 
 ## API documentation
 
-1. Clone the following repositories to the same directory:
+1. Clone the following repositories into a common folder. For example, `/releases/ember.js` and `/releases/data`:
     1. [ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs)
     2. [ember.js](https://github.com/emberjs/ember.js/)
     3. [data](https://github.com/emberjs/data/)
