@@ -16,12 +16,17 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
 
 ## API documentation
 
-1. Clone the following repositories into a common folder. For example, `/releases/ember.js` and `/releases/data`:
-    1. [ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs)
-    2. [ember.js](https://github.com/emberjs/ember.js/)
-    3. [data](https://github.com/emberjs/data/)
-2. `cd ember-jsonapi-docs`
-3. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
+1. Run the following script:
+
+```bash
+mkdir ember-releases
+cd ember-releases
+git clone https://github.com/ember-learn/ember-jsonapi-docs.git
+git clone https://github.com/emberjs/ember.js.git
+git clone https://github.com/emberjs/data.git
+cd ember-jsonapi-docs
+```
+2. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
     1. `AWS_ACCESS_KEY`
     2. `AWS_ACCESS_KEY_ID`
     3. `AWS_SECRET_ACCESS_KEY`
