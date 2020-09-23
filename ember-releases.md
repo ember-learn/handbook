@@ -68,3 +68,11 @@ The next release date is not affected by "delays", and should always be calculat
 <script src="https://button.glitch.me/button.js"></script>
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`
+
+## Ember Wikipedia
+
+1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js)
+2. Click the `Edit source` tab (you will likely need to login)
+3. Update the `latest release version`, `latest release date` & `latest preview version` in the Infobox if they need updating
+4. Be sure to update the accessdate for the url of the releases page referenced on the `latest release date` line
+
