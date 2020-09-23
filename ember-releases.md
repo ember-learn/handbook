@@ -73,6 +73,6 @@ The next release date is not affected by "delays", and should always be calculat
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js)
 2. Click the `Edit source` tab (you will likely need to login)
-3. Update the `latest release version`, `latest release date` & `latest preview version` in the Infobox if they need updating
-4. Be sure to update the accessdate for the url of the releases page referenced on the `latest release date` line
+3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating
+4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line
 
