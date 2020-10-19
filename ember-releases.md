@@ -10,6 +10,8 @@ These are:
 - Release page (index, stable, beta, LTS)
 - [Glitch Ember starter](https://emberjs.glitch.me)
 
+The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
+
 ## Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
