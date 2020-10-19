@@ -10,7 +10,7 @@ These are:
 - Release page (index, stable, beta, LTS)
 - [Glitch Ember starter](https://emberjs.glitch.me)
 
-The Guides and API docs should be published just before the Release blog post. That way, links can be included in the blog post. All other steps come after the blog post.
+The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
 ## Guides
 
