@@ -2,13 +2,14 @@
 
 When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
-These are:
+**Please update the following in the listed order**:
 
-- Guides
-- API documentation
-- Release blog post
-- Release page (index, stable, beta, LTS)
-- [Glitch Ember starter](https://emberjs.glitch.me)
+1. [Guides](#guides)
+1. [API documentation](#api-documentation)
+1. [Release blog post](#release-blog-post)
+1. [Release pages](#release-pages) (index, stable, beta, LTS)
+1. [Glitch Ember starter](#glitch-ember-starter)
+1. [Ember Wikipedia](#ember-wikipedia)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
@@ -77,4 +78,3 @@ The next release date is not affected by "delays", and should always be calculat
 2. Click the `Edit source` tab (you will likely need to login)
 3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating
 4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line
-
