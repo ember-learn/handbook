@@ -7,7 +7,7 @@ the learning team has to make sure some parts of our infrastructure are adequate
 1. [Guides](#guides)
 1. [API documentation](#api-documentation)
 1. [Release blog post](#release-blog-post)
-1. [Release pageg](#release-pages) (index, stable, beta, LTS)
+1. [Release pages](#release-pages) (index, stable, beta, LTS)
 1. [Glitch Ember starter](#glitch-ember-starter)
 1. [Ember Wikipedia](#ember-wikipedia)
 
