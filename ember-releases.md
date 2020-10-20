@@ -2,13 +2,14 @@
 
 When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
-These are:
+These are, **in this order**:
 
-- Guides
-- API documentation
-- Release blog post
-- Release page (index, stable, beta, LTS)
-- [Glitch Ember starter](https://emberjs.glitch.me)
+1. [Guides](#guides)
+1. [API documentation](#api-documentation)
+1. [Release blog post](#release-blog-post)
+1. [Release pageg](#release-pages) (index, stable, beta, LTS)
+1. [Glitch Ember starter](#glitch-ember-starter)
+1. [Ember Wikipedia](#ember-wikipedia)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
