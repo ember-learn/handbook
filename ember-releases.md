@@ -2,7 +2,7 @@
 
 When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
-These are, **in this order**:
+**Please update the following in the listed order**:
 
 1. [Guides](#guides)
 1. [API documentation](#api-documentation)
@@ -78,4 +78,3 @@ The next release date is not affected by "delays", and should always be calculat
 2. Click the `Edit source` tab (you will likely need to login)
 3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating
 4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line
-
