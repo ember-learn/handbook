@@ -60,10 +60,14 @@ The next release date is not affected by "delays", and should always be calculat
 
 ## Glitch Ember starter
 
+Since generating a new application using ember-cli made Glitch run out of memory,
+the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
+
+1. Log in to [https://glitch.com/](https://glitch.com/)
 1. Go to [https://glitch.com/edit/console.html?ember](https://glitch.com/edit/console.html?ember)
-2. Update the local [ember-new-output](https://github.com/ember-cli/ember-new-output) repository
-3. `git checkout` the relevant release version
-4. Include the following snippet for the Glitch button in `app/index.html`
+1. Update the local repository with `git fetch`
+1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.22.0`
+1. Add the following snippet for the Glitch button in `app/index.html`:
 ```
 <!-- include the Glitch button to show what the webpage is about and
   to make it easier for folks to view source and remix -->
