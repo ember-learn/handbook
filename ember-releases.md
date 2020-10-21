@@ -65,9 +65,9 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 
 1. Log in to [https://glitch.com/](https://glitch.com/)
 1. Go to [https://glitch.com/edit/console.html?ember](https://glitch.com/edit/console.html?ember)
-1. `git fetch`
-1. `git reset --hard v3.22.0` the relevant release version tag
-1. Add the following snippet for the Glitch button in `app/index.html`
+1. Update the local repository with `git fetch`
+1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.22.0`
+1. Add the following snippet for the Glitch button in `app/index.html`:
 ```
 <!-- include the Glitch button to show what the webpage is about and
   to make it easier for folks to view source and remix -->
