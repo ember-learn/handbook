@@ -9,23 +9,18 @@ We will employ the use of sub-domains for official Ember projects. Right now we 
 - https://emberjs.com (apex domain)
   - the main website
 - https://www.emberjs.com
-  - a copy of the main website
+  - redirects to https://emberjs.com
 - https://guides.emberjs.com
 - https://cli.emberjs.com
+- https://deprecations.emberjs.com
+- https://api.emberjs.com
+- https://blog.emberjs.com
+- https://help-wanted.emberjs.com
 
 Sub-domains are strongly preferred in cases where parts of our sites work best as standalone, separately maintained apps.
 
 - It is the best fit for the way that Netlify hosting works and will allow us to maintain service workers independently on separate apps when the time comes.
 - It’s better for us to use sub-domains because it allows for us to use service workers (via @Todd J )
-
-There are currently a few apps that exist as **subfolders** of emberjs.com that we have decided to move to subdomains.
-
-| Existing subfolder       | Planned New subdomain    |
-| ------------------------ | ------------------------ |
-| emberjs.com/api          | api.emberjs.com          |
-| emberjs.com/deprecations | deprecations.emberjs.com |
-| emberjs.com/blog         | blog.emberjs.com         |
-
 
 ### Planned new subdomains
 
