@@ -5,19 +5,19 @@ the learning team has to make sure some parts of our infrastructure are adequate
 **Please update the following in the listed order**:
 
 1. [Guides](#guides)
-1. [API documentation](#api-documentation)
-1. [Release blog post](#release-blog-post)
-1. [Release pages](#release-pages) (index, stable, beta, LTS)
-1. [Glitch Ember starter](#glitch-ember-starter)
-1. [Ember Wikipedia](#ember-wikipedia)
+2. [API documentation](#api-documentation)
+3. [Release blog post](#release-blog-post)
+4. [Release pages](#release-pages) (index, stable, beta, LTS)
+5. [Glitch Ember starter](#glitch-ember-starter)
+6. [Ember Wikipedia](#ember-wikipedia)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
-## Guides
+## 1. Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
 
-## API documentation
+## 2. API documentation
 
 1. Run the following script:
 
@@ -39,14 +39,14 @@ cd ember-jsonapi-docs
 5. Wait and confirm there were no errors
 6. Done!
 
-## Release blog post
+## 3. Release blog post
 
 **NOTE** ember-source, ember-data, and ember-cli must already be released.
 
 1. Go to [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
 2. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
-## Release pages
+## 4. Release pages
 
 The next release date is not affected by "delays", and should always be calculated as original date + 6 weeks.
 
@@ -58,7 +58,7 @@ The next release date is not affected by "delays", and should always be calculat
     4. `data/project/emberData/release.md`
     5. `data/project/emberData/beta.md`
 
-## Glitch Ember starter
+## 5. Glitch Ember starter
 
 Since generating a new application using ember-cli made Glitch run out of memory,
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
@@ -76,7 +76,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`
 
-## Ember Wikipedia
+## 6. Ember Wikipedia
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js)
 2. Click the `Edit source` tab (you will likely need to login)
