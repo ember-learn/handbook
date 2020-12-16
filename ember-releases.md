@@ -64,7 +64,7 @@ Since generating a new application using ember-cli made Glitch run out of memory
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
 
 1. Log in to [https://glitch.com/](https://glitch.com/)
-1. Go to [https://glitch.com/edit/console.html?ember](https://glitch.com/edit/console.html?ember)
+1. Go to [https://glitch.com/edit/console.html?emberjs](https://glitch.com/edit/console.html?emberjs)
 1. Update the local repository with `git fetch`
 1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.22.0`
 1. Add the following snippet for the Glitch button in `app/index.html`:
