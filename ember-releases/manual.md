@@ -1,7 +1,5 @@
-# Ember Releases
+# Manual release process
 
-When a new version of Ember is released,
-the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
 1. [Guides](#1-guides)
@@ -11,33 +9,13 @@ the learning team has to make sure some parts of our infrastructure are adequate
 5. [Glitch Ember starter](#5-glitch-ember-starter)
 6. [Ember Wikipedia](#6-ember-wikipedia)
 
-The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
-
 ## 1. Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
 
 ## 2. API documentation
 
-1. Run the following script:
-
-```bash
-mkdir ember-releases
-cd ember-releases
-git clone https://github.com/ember-learn/ember-jsonapi-docs.git
-git clone https://github.com/emberjs/ember.js.git
-git clone https://github.com/emberjs/data.git
-cd ember-jsonapi-docs
-```
-2. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
-    1. `AWS_ACCESS_KEY`
-    2. `AWS_ACCESS_KEY_ID`
-    3. `AWS_SECRET_ACCESS_KEY`
-    4. `AWS_SECRET_KEY`
-    5. `AWS_SHOULD_PUBLISH`
-4. Run `yarn run start --sync`
-5. Wait and confirm there were no errors
-6. Done!
+Instructions are found in [RELEASE.md](https://github.com/ember-learn/ember-jsonapi-docs/blob/master/EMBER_RELEASE.md).
 
 ## 3. Release blog post
 
