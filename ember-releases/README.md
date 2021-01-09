@@ -16,10 +16,5 @@ The Guides and API docs should be published first, followed by the Release blog 
 There are two ways to go about it.
 Consult the relevant document for more detailed instructions:
 
-1. [Use tool-new-release](./tool-new-release.md)
-
-This tool tries to automate the process as much as possible as should be the preferred method.
-
-2. [Follow steps manually](./manual.md)
-
-If you wish to do the process manually, you will find all the steps described here.
+1. [Use tool-new-release](./tool-new-release.md). The tool tries to automate the process as much as possible. This option is the preferred method.
+2. [Make a release manually](./manual.md).
