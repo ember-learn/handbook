@@ -19,11 +19,8 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
 
 ## 2. API documentation
 
-1. Run the following script:
-
+1. Clone the `ember-jsonapi-docs` repository:
 ```bash
-mkdir ember-releases
-cd ember-releases
 git clone https://github.com/ember-learn/ember-jsonapi-docs.git
 cd ember-jsonapi-docs
 ```
