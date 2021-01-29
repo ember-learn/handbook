@@ -8,8 +8,9 @@ the learning team has to make sure some parts of our infrastructure are adequate
 2. [API documentation](#2-api-documentation)
 3. [Release blog post](#3-release-blog-post)
 4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
-5. [Glitch Ember starter](#5-glitch-ember-starter)
-6. [Ember Wikipedia](#6-ember-wikipedia)
+5. [Deprecations](#5-deprecations)
+6. [Glitch Ember starter](#6-glitch-ember-starter)
+7. [Ember Wikipedia](#7-ember-wikipedia)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
@@ -53,7 +54,17 @@ The next release date is not affected by "delays", and should always be calculat
     4. `data/project/emberData/release.md`
     5. `data/project/emberData/beta.md`
 
-## 5. Glitch Ember starter
+## 5. Deprecations
+
+
+
+1. Go to [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/) and [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/)
+2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
+3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
+4. Update `since: "Upcoming"` in the frontmatter to the respective release in the `v3.12` format.
+5. Merge and confirm changes on the live website 
+
+## 6. Glitch Ember starter
 
 Since generating a new application using ember-cli made Glitch run out of memory,
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
@@ -71,7 +82,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`
 
-## 6. Ember Wikipedia
+## 7. Ember Wikipedia
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js)
 2. Click the `Edit source` tab (you will likely need to login)
