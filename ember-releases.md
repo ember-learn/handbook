@@ -61,7 +61,7 @@ The next release date is not affected by "delays", and should always be calculat
 1. Go to [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/) and [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/)
 2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
 3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
-4. Update `since: "Upcoming"` in the frontmatter to the respective release in the `v3.12` format.
+4. Update `since: "Upcoming Features"` in the frontmatter to the respective release in the `v3.12` format.
 5. Merge and confirm changes on the live website 
 
 ## 6. Glitch Ember starter
