@@ -57,8 +57,6 @@ The next release date is not affected by "delays", and should always be calculat
 
 ## 5. Deprecations
 
-
-
 1. Go to [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/) and [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/)
 2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
 3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
