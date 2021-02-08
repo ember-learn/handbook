@@ -11,6 +11,7 @@ the learning team has to make sure some parts of our infrastructure are adequate
 5. [Deprecations](#5-deprecations)
 6. [Glitch Ember starter](#6-glitch-ember-starter)
 7. [Ember Wikipedia](#7-ember-wikipedia)
+8. [Release bot](#8-release-bot)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
@@ -80,11 +81,17 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
 <script src="https://button.glitch.me/button.js"></script>
 ```
-5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`
+5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
 
 ## 7. Ember Wikipedia
 
-1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js)
-2. Click the `Edit source` tab (you will likely need to login)
-3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating
-4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line
+1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js).
+2. Click the `Edit source` tab (you will likely need to login).
+3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating.
+4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line.
+
+## 8. Release bot
+
+1. Go to the core meta channel in Discord.
+2. Mark current release as done with `!release done`.
+3. Schedule next release with the `!release next M.mm YYYY-MM-DD` command. E.g. `!release next 3.25 2021-02-08`.
