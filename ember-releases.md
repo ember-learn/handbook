@@ -91,5 +91,5 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ## 8. Release bot
 
 1. Go to the core meta channel in Discord.
-2. Mark current release as done with `!release done`.
+2. Mark current release as done with `!release done blog`.
 3. Schedule next release with the `!release next M.mm YYYY-MM-DD` command. E.g. `!release next 3.25 2021-02-08`.
