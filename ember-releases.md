@@ -9,9 +9,10 @@ the learning team has to make sure some parts of our infrastructure are adequate
 3. [Release blog post](#3-release-blog-post)
 4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
 5. [Deprecations](#5-deprecations)
-6. [Glitch Ember starter](#6-glitch-ember-starter)
-7. [Ember Wikipedia](#7-ember-wikipedia)
-8. [Release bot](#8-release-bot)
+6. [Upgrade Guide](#6-upgrade-guide)
+7. [Glitch Ember starter](#7-glitch-ember-starter)
+8. [Ember Wikipedia](#8-ember-wikipedia)
+9. [Release bot](#9-release-bot)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
@@ -61,9 +62,18 @@ The next release date is not affected by "delays", and should always be calculat
 2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
 3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
 4. Update `since: "Upcoming Features"` in the frontmatter to the respective release in the `v3.12` format.
-5. Merge and confirm changes on the live website 
+5. Merge and confirm changes on the live website
 
-## 6. Glitch Ember starter
+## 6. Upgrade Guide
+
+1. Clone [upgrade-guide](https://github.com/ember-learn/upgrade-guide) and run `yarn install`. (You can run `ember serve` and visit [http://localhost:4200](http://localhost:4200) to see your changes take effect.)
+2. Run `ember generate upgrade-notes <VERSION>` (e.g. `ember g upgrade-notes 3.25`) to create 3 Markdown files.
+3. Edit the files by recording features and deprecations. You can find short descriptions for features and deprecations in the release blog post. (See [step 3](#3-release-blog-post))
+4. Edit the `app/utils/ember-versions.js` file. Append the release version to the end of the array.
+5. Run `yarn lint` and `yarn test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
+6. Open a pull request, then merge it.
+
+## 7. Glitch Ember starter
 
 Since generating a new application using ember-cli made Glitch run out of memory,
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
@@ -81,14 +91,14 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
 
-## 7. Ember Wikipedia
+## 8. Ember Wikipedia
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js).
 2. Click the `Edit source` tab (you will likely need to login).
 3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating.
 4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line.
 
-## 8. Release bot
+## 9. Release bot
 
 1. Go to the core meta channel in Discord.
 2. Mark current release as done with `!release done blog`.
