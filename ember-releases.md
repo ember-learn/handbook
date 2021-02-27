@@ -61,7 +61,7 @@ The next release date is not affected by "delays", and should always be calculat
 1. Go to [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/) and [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/)
 2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
 3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
-4. Update `since: "Upcoming Features"` in the frontmatter to the respective release in the `v3.12` format.
+4. Update `since: "Upcoming Features"` in the frontmatter to the respective release in the `v3.25` format.
 5. Merge and confirm changes on the live website
 
 ## 6. Upgrade Guide
@@ -81,7 +81,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 1. Log in to [https://glitch.com/](https://glitch.com/)
 1. Go to [https://glitch.com/edit/console.html?emberjs](https://glitch.com/edit/console.html?emberjs)
 1. Update the local repository with `git fetch`
-1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.22.0`
+1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.25.0`
 1. Add the following snippet for the Glitch button in `app/index.html`:
 ```
 <!-- include the Glitch button to show what the webpage is about and
@@ -102,4 +102,4 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 
 1. Go to the core meta channel in Discord.
 2. Mark current release as done with `!release done blog`.
-3. Schedule next release with the `!release next M.mm YYYY-MM-DD` command. E.g. `!release next 3.25 2021-02-08`.
+3. Schedule next release with the `!release next M.mm YYYY-MM-DD` command. E.g. `!release next 3.26 2021-03-22`.
