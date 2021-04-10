@@ -65,6 +65,6 @@ release: npm i -g fastly-cli && fastly purge-all -k $FASTLY_PURGE_KEY -s $FASTLY
 [14]: https://github.com/ember-learn/deprecation-app/blob/4c058c65e0ab43c03b062beb4164544d7a515600/config/environment.js#L52
 
 
-[screen1]: https://raw.githubusercontent.com/ember-learn/handbook/master/images/fastly/01_create-service-page.png
-[screen2]: https://raw.githubusercontent.com/ember-learn/handbook/master/images/fastly/02_service_created.png
-[screen3]: https://raw.githubusercontent.com/ember-learn/handbook/master/images/fastly/03_cors_setup.png
+[screen1]: https://raw.githubusercontent.com/ember-learn/handbook/main/images/fastly/01_create-service-page.png
+[screen2]: https://raw.githubusercontent.com/ember-learn/handbook/main/images/fastly/02_service_created.png
+[screen3]: https://raw.githubusercontent.com/ember-learn/handbook/main/images/fastly/03_cors_setup.png
