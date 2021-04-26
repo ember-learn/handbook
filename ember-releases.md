@@ -58,11 +58,13 @@ The next release date is not affected by "delays", and should always be calculat
 
 ## 5. Deprecations
 
-1. Go to [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/) and [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/)
-2. Check if any of the deprecations listed under "Upcoming Features" are part of the new release
-3. Find the relevant deprecation in `https://github.com/ember-learn/deprecation-app/tree/master/content`
-4. Update `since: "Upcoming Features"` in the frontmatter to the respective release in the `v3.25` format.
-5. Merge and confirm changes on the live website
+1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
+2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
+3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`).
+4. Find the relevant Markdown file in `/content/ember/v3` folder.
+5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
+6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
+7. Open a pull request.
 
 ## 6. Upgrade Guide
 
