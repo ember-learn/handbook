@@ -3,19 +3,19 @@ In order to mentor and develop leadership skills within the Ember Learning Core 
 
 ## Weekly meeting leadership
 
-Currently, Todd has been facilitating meetings, with Mel as the backup. One way to share leadership in the learning team is to have rotating meeting leadership responsibilities.
+We want to share leadership in the learning team is by having rotating meeting leadership responsibilities.
 
-### Responsibilities would include:
+### Responsibilities
 
-- set up the agenda on Dropbox, ideally by the Monday of the week of the meeting
-  - Create a document using the `Learn Team Agenda 2019-MM-DD` template
-  - Add link to previous week's meeting
-  - Update the "Every Timezone" link
-- post the link in the #core-learning channel description. We don't share the link in public chat channels. Once the meeting has started, we share link to the video call in the public channel. Then we share the agenda with the attendees via the video chat interface.
-- act as the meeting facilitator (leading the discussion, ensuring that we stay on track with the agenda & conversation)
-- extract the public notes and submit them to the [GitHub repository for core team notes](https://github.com/emberjs/core-notes)
-- synthesize the to-do items into issues in the relevant GitHub repository for tracking
+These leadership responsibilities include:
 
+- Act as the meeting facilitator. You are expected to lead discussions according to the agenda, ensuring conversations are kept on topic and within agreed timeboxes.
+- Once the meeting ends, you are responsible for:
+  - Submit the meeting notes to [core-notes](https://github.com/emberjs/core-notes).
+  - Synthetizing action items into issues and file them in the relevant GitHub repository or project.
+  - Create the agenda for the following meeting.
+  - Create an event on Discord for the following meeting. Make sure to include a link to the relevant agenda.
 
 ### Schedule
-It would be beneficial to have a different meeting facilitator every two weeks. At the end of each core team meeting, the meeting facilitator can identify who the next meeting facilitator will be (either themselves for the second week, or ask for a volunteer). We should be roughly striving for equal rotation of willing participants.
+
+Ideally we have a different facilitator every meeting, decided at the start.
