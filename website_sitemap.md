@@ -16,20 +16,25 @@ Items in parenthesis () indicate that the item is planned but doesn't exist yet.
 |   |   ├── Ember Data
 |   |   └── (ember-cli API) (currently: https://ember-cli.com/api/)
 |   └── Learn Ember
-|       └── Tutorials
-|           ├── 101 Quick Start
-|           ├── 201 Contact Book
-|           └── 201 Super Rentals
+|       └── (Tutorials)
+|           ├── (101 Quick Start)
+|           ├── (201 Contact Book)
+|           └── (201 Super Rentals)
 ├── RELEASES
+|   ├── Browser support
+|   ├── Editions
+|   |   ├── Octane
+|   ├── RFC Tracking
 |   ├── Channels
+|   |   ├── lts
 |   |   ├── stable
 |   |   ├── beta
 |   |   └── canary
 |   ├── Deprecations (sub-domain? deprecations.emberjs.com)
-|   |   ├── ember/:version/:deprecation-id
-|   |   ├── ember-cli/:version/:deprecation-id
-|   |   └── ember-data/:version/:deprecation-id
-|   └── Status Board
+|       ├── ember/:version/:deprecation-id
+|       ├── ember-cli/:version/:deprecation-id
+|       └── ember-data/:version/:deprecation-id
+|   
 ├── BLOG (sub-domain: blog.emberjs.com)
 ├── COMMUNITY
 |   ├── The Ember.js Community
@@ -39,13 +44,12 @@ Items in parenthesis () indicate that the item is planned but doesn't exist yet.
 |   ├── Meetups
 |   |   ├── getting started
 |   |   └── resources & assets
-|   ├── Job Board (external link)
 |   ├── EmberConf (external link)
 |   └── Annual Community Survey
 |       └── :year
 ├── ABOUT
 |   ├── The Team
-|   ├── Ember Doctrine
+|   ├── (Ember Doctrine)
 |   ├── Branding
 |   ├── Mascots
 |   |   ├── FAQ
