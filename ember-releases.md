@@ -8,9 +8,9 @@ When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
-1. [Release blog post](#3-release-blog-post)
-2. [Guides](#1-guides)
-3. [API documentation](#2-api-documentation)
+1. [Release blog post](#1-release-blog-post)
+2. [Guides](#2-guides)
+3. [API documentation](#3-api-documentation)
 4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
 5. [Deprecations](#5-deprecations)
 6. [Upgrade Guide](#6-upgrade-guide)
