@@ -1,12 +1,16 @@
 # Ember Releases
 
+NOTE: The steps below are manual deploy steps. We have a CLI tool called
+[`tool-new-release`](https://github.com/ember-learn/tool-new-release)
+that automates these steps.
+
 When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
-1. [Guides](#1-guides)
-2. [API documentation](#2-api-documentation)
-3. [Release blog post](#3-release-blog-post)
+1. [Release blog post](#3-release-blog-post)
+2. [Guides](#1-guides)
+3. [API documentation](#2-api-documentation)
 4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
 5. [Deprecations](#5-deprecations)
 6. [Upgrade Guide](#6-upgrade-guide)
@@ -16,11 +20,25 @@ the learning team has to make sure some parts of our infrastructure are adequate
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
-## 1. Guides
+
+## 1. Release blog post
+
+**NOTE** ember-source, ember-data, and ember-cli must already be released.
+
+1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
+MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
+defaults to the Ember Learning Team.
+3. Open a PR with the template at [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
+4. Tag core teams to fill in details
+5. Merge the relevant blog post once it is OK'ed by all the team representatives.
+
+Once the release post is out, the website resources may be deployed.
+
+## 2. Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
 
-## 2. API documentation
+## 3. API documentation
 
 1. Clone the `ember-jsonapi-docs` repository:
 ```bash
@@ -36,13 +54,6 @@ cd ember-jsonapi-docs
 4. Run `yarn run start --sync`
 5. Wait and confirm there were no errors
 6. Done!
-
-## 3. Release blog post
-
-**NOTE** ember-source, ember-data, and ember-cli must already be released.
-
-1. Go to [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
-2. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
 ## 4. Release pages
 
