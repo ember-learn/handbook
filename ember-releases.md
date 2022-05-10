@@ -8,15 +8,15 @@ When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
-1. [Release blog post](#1-release-blog-post)
-2. [Guides](#2-guides)
-3. [API documentation](#3-api-documentation)
-4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
-5. [Deprecations](#5-deprecations)
-6. [Upgrade Guide](#6-upgrade-guide)
-7. [Glitch Ember starter](#7-glitch-ember-starter)
-8. [Ember Wikipedia](#8-ember-wikipedia)
-9. [Release bot](#9-release-bot)
+1. [Guides](#1-guides)
+1. [API documentation](#2-api-documentation)
+1. [Blog post announcement](#3-blog-post-announcement)
+1. [Release pages](#4-release-pages) (index, stable, beta, LTS)
+1. [Deprecations](#5-deprecations)
+1. [Upgrade Guide](#6-upgrade-guide)
+1. [Glitch Ember starter](#7-glitch-ember-starter)
+1. [Ember Wikipedia](#8-ember-wikipedia)
+1. [Release bot](#9-release-bot)
 
 The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
 
@@ -25,12 +25,14 @@ The Guides and API docs should be published first, followed by the Release blog 
 
 **NOTE** ember-source, ember-data, and ember-cli must already be released.
 
+1. Clone the [ember-blog](https://github.com/ember-learn/ember-blog/) repository 
 1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
 MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
 defaults to the Ember Learning Team.
-3. Open a PR with the template at [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
-4. Tag core teams to fill in details
-5. Merge the relevant blog post once it is OK'ed by all the team representatives.
+3. Open a PR with the generated blog post at [ember-blog](https://github.com/ember-learn/ember-blog/pulls).  
+3.1. Fill out the sections in the PR for Ember, Ember Data and Ember CLI with the respective changelogs. You can get them from the release branch (if the project has been released) or the beta branch (if the project hasn't been released): [ember.js release](https://github.com/emberjs/ember.js/blob/release/CHANGELOG.md), [ember.js beta](https://github.com/emberjs/ember.js/blob/release/CHANGELOG.md), [ember-data release](https://github.com/emberjs/data/blob/release/CHANGELOG.md), [ember-data beta](https://github.com/emberjs/data/blob/release/CHANGELOG.md), [ember-cli release](https://github.com/ember-cli/ember-cli/blob/release/CHANGELOG.md), [ember-cli beta](https://github.com/ember-cli/ember-cli/blob/release/CHANGELOG.md)
+5. Tag core teams to fill in details
+6. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
 Once the release post is out, the website resources may be deployed.
 
@@ -70,12 +72,15 @@ The next release date is not affected by "delays", and should always be calculat
 ## 5. Deprecations
 
 1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
-2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
-3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`).
-4. Find the relevant Markdown file in `/content/ember/v3` folder.
-5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
-6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
+2. To see deprecations in `ember-source`, check `deprecation-app/content/ember/`.
+3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v4.12`).
+4. Find the relevant Markdown file in `/content/ember/v4` folder.
+5. Update the frontmatter from `since: "Upcoming Features"` to `since: "v4.12"`.
+6. Repeat steps 2-5 for deprecations in `ember-data`.
 7. Open a pull request.
+8. Get it reviewed.
+9. Get it merged.
+10. CI automatically deploys, check that the deploy is working fine.
 
 ## 6. Upgrade Guide
 
@@ -87,6 +92,10 @@ The next release date is not affected by "delays", and should always be calculat
 6. Open a pull request, then merge it.
 
 ## 7. Glitch Ember starter
+
+Glitch enables you to develop web applications directly in your browser.
+We have a starter Ember project at https://emberjs.glitch.me/.
+With these instructions, we will be updating the code for that Ember application, so that it is running on the latest stable Ember version.
 
 Since generating a new application using ember-cli made Glitch run out of memory,
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
