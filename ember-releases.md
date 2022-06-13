@@ -79,7 +79,7 @@ The next release date is not affected by "delays", and should always be calculat
 
 ## 6. Upgrade Guide
 
-1. Clone [upgrade-guide](https://github.com/ember-learn/upgrade-guide) and run `yarn install`. (You can run `ember serve` and visit [http://localhost:4200](http://localhost:4200) to see your changes take effect.)
+1. Clone [upgrade-guide](https://github.com/ember-learn/upgrade-guide) and run `npm install`. (You can run `ember serve` and visit [http://localhost:4200](http://localhost:4200) to see your changes take effect.)
 2. Run `ember generate upgrade-notes <VERSION>` (e.g. `ember g upgrade-notes 3.25`) to create 3 Markdown files.
 3. Edit the files by recording features and deprecations. You can find short descriptions for features and deprecations in the release blog post. (See [step 3](#3-release-blog-post))
 4. Edit the `app/utils/ember-versions.js` file. Append the release version to the end of the array.
