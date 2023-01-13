@@ -23,7 +23,7 @@ The Guides and API docs should be published first, followed by the Release blog 
 
 ## 1. Release blog post
 
-**NOTE** ember-source, ember-data, and ember-cli must already be released.
+**NOTE** [ember-source](https://github.com/emberjs/ember.js/releases), [ember-data](https://github.com/emberjs/data/releases), and [ember-cli](https://github.com/ember-cli/ember-cli/releases) must already be released.
 
 1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
 MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
