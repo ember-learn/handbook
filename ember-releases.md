@@ -40,9 +40,9 @@ Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides
 
 ## 3. API documentation
 
-1. Clone the `ember-jsonapi-docs` repository:
+1. Clone the [ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs) repository:
 ```bash
-git clone https://github.com/ember-learn/ember-jsonapi-docs.git
+git clone git@github.com:ember-learn/ember-jsonapi-docs.git
 cd ember-jsonapi-docs
 ```
 2. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
