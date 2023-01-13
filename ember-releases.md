@@ -32,7 +32,7 @@ defaults to the Ember Learning Team.
 4. Tag core teams to fill in details
 5. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
-Once the release post is out, the website resources may be deployed.
+First complete at minimum step 2 and 3 before merging the PR. Step 4 - 6 would be nice to have :)
 
 ## 2. Guides
 
