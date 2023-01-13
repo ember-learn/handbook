@@ -37,6 +37,7 @@ First complete at minimum step 2 and 3 before merging the PR. Step 4 - 6 would b
 ## 2. Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
+If this does not work you can always run `bash scripts/create-new-minor-version`
 
 ## 3. API documentation
 
