@@ -32,25 +32,25 @@ defaults to the Ember Learning Team.
 4. Tag core teams to fill in details
 5. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
-Once the release post is out, the website resources may be deployed.
+First complete at minimum step 2 and 3 before merging the PR. Step 4 - 6 would be nice to have :)
 
 ## 2. Guides
 
 Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
+If this does not work you can always run `bash scripts/create-new-minor-version`
 
 ## 3. API documentation
 
-1. Clone the `ember-jsonapi-docs` repository:
+1. Clone the [ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs) repository:
 ```bash
-git clone https://github.com/ember-learn/ember-jsonapi-docs.git
+git clone git@github.com:ember-learn/ember-jsonapi-docs.git
 cd ember-jsonapi-docs
+yarn install
 ```
 2. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
-    1. `AWS_ACCESS_KEY`
-    2. `AWS_ACCESS_KEY_ID`
-    3. `AWS_SECRET_ACCESS_KEY`
-    4. `AWS_SECRET_KEY`
-    5. `AWS_SHOULD_PUBLISH`
+    1. `AWS_ACCESS_KEY_ID`
+    2. `AWS_SECRET_ACCESS_KEY`
+    3. `AWS_SHOULD_PUBLISH`
 4. Run `yarn run start --sync`
 5. Wait and confirm there were no errors
 6. Done!
