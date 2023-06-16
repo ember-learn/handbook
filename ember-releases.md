@@ -1,59 +1,122 @@
 # Ember Releases
 
-NOTE: The steps below are manual deploy steps. We have a CLI tool called
-[`tool-new-release`](https://github.com/ember-learn/tool-new-release)
-that automates these steps.
-
 When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
-1. [Release blog post](#1-release-blog-post)
-2. [Guides](#2-guides)
-3. [API documentation](#3-api-documentation)
-4. [Release pages](#4-release-pages) (index, stable, beta, LTS)
-5. [Deprecations](#5-deprecations)
-6. [Upgrade Guide](#6-upgrade-guide)
-7. [Glitch Ember starter](#7-glitch-ember-starter)
-8. [Ember Wikipedia](#8-ember-wikipedia)
-9. [Release bot](#9-release-bot)
+Preparation before release day: 
 
-The Guides and API docs should be published first, followed by the Release blog post. This way, links to the Guides and API docs can be included in the Release blog post. All other steps come after the blog post.
+1. [Release blog post](#release-blog-post)
+1. [Deprecations](#deprecations)
 
+On "release day" in this specific order
 
-## 1. Release blog post
+<!-- 1. run tool-new-release -->
+1. [Guides PR](#guides)
+1. [API documentation](api-documentation)
+1. merge guides PR
+1. merge blog
+1. merge deprecations PR
+1. [Guides search](#gudies-search)
+1. [Release pages](#release-pages) (index, stable, beta, LTS)
+1. [Upgrade Guide](#upgrade-guide)
+1. [Glitch Ember starter](#glitch-ember-starter)
+1. [Ember Wikipedia](#ember-wikipedia)
+1. [Release bot](#release-bot)
 
-**NOTE** [ember-source](https://github.com/emberjs/ember.js/releases), [ember-data](https://github.com/emberjs/data/releases), and [ember-cli](https://github.com/ember-cli/ember-cli/releases) must already be released.
+## Prerequsites 
+
+- install `tool-new-release` - this automates most of the things 
+
+NOTE: The steps below are manual deploy steps. We have a CLI tool called
+[`tool-new-release`](https://github.com/ember-learn/tool-new-release)
+that automates these steps.
+
+- install 1Password and make sure you have access to the `something` vault
+- install `1password-cli` installed
+
+## Release blog post
+
+💁 manual process
+
+**NOTE** ember-source, ember-data, and ember-cli must already be released.
 
 1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
 MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
 defaults to the Ember Learning Team.
 3. Open a PR with the template at [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
 4. Tag core teams to fill in details
-5. Merge the relevant blog post once it is OK'ed by all the team representatives.
 
-Once the release post is out, the website resources may be deployed.
+## Deprecations
 
-## 2. Guides
+1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
+2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
+3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`).
+4. Find the relevant Markdown file in `/content/ember/v3` folder.
+5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
+6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
+7. Open a pull request.
 
-Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
+## Guides
 
-## 3. API documentation
+🤖 automated process (but would currently recommend the manual fallback)
 
-1. Clone the `ember-jsonapi-docs` repository:
-```bash
-git clone https://github.com/ember-learn/ember-jsonapi-docs.git
-cd ember-jsonapi-docs
+Run the following command with `tool-new-release`
+
 ```
-2. Go to the heroku instance, navigate to `Settings`, click `reveal config vars` and use the values seen there as values for the following variables in your local environment:
-    1. `AWS_ACCESS_KEY`
-    2. `AWS_ACCESS_KEY_ID`
-    3. `AWS_SECRET_ACCESS_KEY`
-    4. `AWS_SECRET_KEY`
-    5. `AWS_SHOULD_PUBLISH`
-4. Run `yarn run start --sync`
-5. Wait and confirm there were no errors
-6. Done!
+tool-new-release guides
+```
+
+Note: this just runs the `release:guides:minor` shell script from the guides-source repo and doesn't support major versions
+
+<details>
+    <summary>Fallback 💁 Manual process</summary>
+
+    Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
+
+</details>
+
+## API documentation
+
+🤖 automated process
+
+Run the following command with `tool-new-release`
+
+```
+tool-new-release api-docs --new-version v4.11.0
+```
+
+Note: when this succeeds with no errors it still takes a while for the new version to show up in https://api.emberjs.com/ember/release
+
+<details>
+    <summary>Fallback 💁 Manual process</summary>
+
+    Instructions are found in the [README of ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs#overriding-a-specific-version-of-yuidoc-file-with-a-local-copy-for-core-contributors).
+
+</details>
+
+## Guides search
+
+TODO: continue here
+
+🤖 automated process (but would currently recommend the manual fallback)
+
+Run the following command with `tool-new-release`
+
+```
+tool-new-release guides-search
+```
+
+Note: this just runs the `release:search` shell script from the guides-source repo
+
+<details>
+    <summary>Fallback 💁 Manual process</summary>
+
+    Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#updating-the-guides-search).
+</details>
+
+
+
 
 ## 4. Release pages
 
@@ -67,15 +130,6 @@ The next release date is not affected by "delays", and should always be calculat
     4. `data/project/emberData/release.md`
     5. `data/project/emberData/beta.md`
 
-## 5. Deprecations
-
-1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
-2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
-3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`).
-4. Find the relevant Markdown file in `/content/ember/v3` folder.
-5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
-6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
-7. Open a pull request.
 
 ## 6. Upgrade Guide
 
