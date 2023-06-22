@@ -83,21 +83,21 @@ Note: this just runs the `release:guides:minor` shell script from the guides-sou
 Run the following command with `tool-new-release`
 
 ```
-tool-new-release api-docs --new-version v4.11.0
+tool-new-release api-docs
 ```
 
 Note: when this succeeds with no errors it still takes a while for the new version to show up in https://api.emberjs.com/ember/release
 
+Note: if it's taking a very long time to show up then you probably need to perge the cache in Fastly. Log into https://fastly.com and click `Purge` and then `Purge all` for `api.emberjs.com`
+
 <details>
-    <summary>Fallback 💁 Manual process</summary>
+    <summary>Fallback 💁 manual process</summary>
 
     Instructions are found in the [README of ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs#overriding-a-specific-version-of-yuidoc-file-with-a-local-copy-for-core-contributors).
 
 </details>
 
 ## Guides search
-
-TODO: continue here
 
 🤖 automated process (but would currently recommend the manual fallback)
 
@@ -110,7 +110,7 @@ tool-new-release guides-search
 Note: this just runs the `release:search` shell script from the guides-source repo
 
 <details>
-    <summary>Fallback 💁 Manual process</summary>
+    <summary>Fallback 💁 manual process</summary>
 
     Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#updating-the-guides-search).
 </details>
