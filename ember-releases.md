@@ -18,7 +18,7 @@ On "release day" in this specific order
 1. merge blog
 1. merge deprecations PR
 1. [Guides search](#gudies-search)
-1. [Release pages](#release-pages) (index, stable, beta, LTS)
+1. [Release pages](#release-pages)
 1. [Upgrade Guide](#upgrade-guide)
 1. [Glitch Ember starter](#glitch-ember-starter)
 1. [Ember Wikipedia](#ember-wikipedia)
@@ -118,7 +118,7 @@ Note: this just runs the `release:search` shell script from the guides-source re
 
 
 
-## 4. Release pages
+## Release pages
 
 💁 manual process
 
@@ -149,13 +149,15 @@ If there is a new LTS release then you should make the following changes too:
 
 Pro tip: if you're looking for the exact date that a project has released you can run `npm info ember-source time` and see the list of releases and dates.
 
-## 6. Upgrade Guide
+## Upgrade Guide
+
+💁 manual process
 
 1. Clone [upgrade-guide](https://github.com/ember-learn/upgrade-guide) and run `npm install`. (You can run `ember serve` and visit [http://localhost:4200](http://localhost:4200) to see your changes take effect.)
-2. Run `ember generate upgrade-notes <VERSION>` (e.g. `ember g upgrade-notes 3.25`) to create 3 Markdown files.
-3. Edit the files by recording features and deprecations. You can find short descriptions for features and deprecations in the release blog post. (See [step 3](#3-release-blog-post))
+2. Run `ember generate upgrade-notes <NEW_VERSION>` (e.g. `ember g upgrade-notes 3.25`) to create 3 Markdown files.
+3. Edit the files by recording features and deprecations. You can find short descriptions for features and deprecations in the release blog post.
 4. Edit the `app/utils/ember-versions.js` file. Append the release version to the end of the array.
-5. Run `yarn lint` and `yarn test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
+5. Run `npm run lint` and `npm test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
 6. Open a pull request, then merge it.
 
 ## 7. Glitch Ember starter
