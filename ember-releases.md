@@ -120,16 +120,34 @@ Note: this just runs the `release:search` shell script from the guides-source re
 
 ## 4. Release pages
 
-The next release date is not affected by "delays", and should always be calculated as original date + 6 weeks.
+💁 manual process
 
-1. Clone [ember-website](https://github.com/ember-learn/ember-website)
-2. Edit the following files:
-    1. `data/project/ember/lts.md`
-    2. `data/project/ember/release.md`
-    3. `data/project/ember/beta.md`
-    4. `data/project/emberData/release.md`
-    5. `data/project/emberData/beta.md`
 
+- Clone [ember-website](https://github.com/ember-learn/ember-website)
+- Edit `data/project/ember/release.md`
+  - update `lastRelease` to be the first patch version of the new `ember-source` release
+  - update `date` to be the date of the first patch version of the new `ember-source` release
+- Edit `data/project/emberData/release.md`
+  - update `lastRelease` to be the first patch version of the new `ember-data` release
+  - update `date` to be the date of the first patch version of the new `ember-data` release
+- Edit `data/project/ember/beta.md`
+  - update `lastRelease` to be the latest beta version of `ember-source`
+  - update `date` to be the date of the latest beta version of `ember-source`
+- Edit `data/project/emberData/beta.md`
+  - update `lastRelease` to be the latest beta version of `ember-data`
+  - update `date` to be the date of the latest beta version of `ember-data`
+
+
+If there is a new LTS release then you should make the following changes too: 
+
+- Edit `data/project/ember/lts.md`
+  - update `lastRelease` to be the **latest patch** version of the new LTS release
+  - update `date` to be the date of the **latest patch** version of the new LTS release
+- Edit `app/controllers/releases/lts.js`
+  - make sure the entries in the array are correct
+  - if there is a LTS version that has been removed from support then remove it and add it to the html table on `app/templates/releases/lts.hbs`
+
+Pro tip: if you're looking for the exact date that a project has released you can run `npm info ember-source time` and see the list of releases and dates.
 
 ## 6. Upgrade Guide
 
