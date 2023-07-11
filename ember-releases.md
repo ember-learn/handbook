@@ -189,8 +189,10 @@ Run the following command with `tool-new-release`
 ```
 tool-new-release glitch
 ```
-
+<details>
+    <summary>Fallback 💁 manual process</summary>
 Or, use the 💁 manual process fallback:
+
 
 Since generating a new application using ember-cli made Glitch run out of memory,
 the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
@@ -207,10 +209,13 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 <script src="https://button.glitch.me/button.js"></script>
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
+</details>
 
 ### Ember Wikipedia
 
 💁 manual process
+
+Note: The Wikipedia page may have already been updated automatically for the version you are releasing. If that is the case, you can skip this step.
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js).
 2. Click the `Edit source` tab (you will likely need to login).
