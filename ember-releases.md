@@ -4,12 +4,48 @@ When a new version of Ember is released,
 the learning team has to make sure some parts of our infrastructure are adequately updated to account for it.
 **Please update the following in the listed order**:
 
-Preparation before release day: 
+## Preparation (ideally) before release day: 
 
 1. [Release blog post](#release-blog-post)
 1. [Deprecations](#deprecations)
 
-On "release day" in this specific order
+### Create the release blog post
+
+💁 manual process
+
+**NOTE** ember-source, ember-data, and ember-cli must already be released.
+
+1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
+MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
+defaults to the Ember Learning Team.
+3. Open a PR with the template at [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls).
+4. Tag core teams in `core-meta` on discord to fill in details and approve for their respective teams.
+
+### Deprecations
+
+💁 manual process
+
+1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
+2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
+3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`). If there are, proceed with this step, if there are not, you can skip to the Guides step.
+4. Find the relevant Markdown file in `/content/ember/v3` folder.
+5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
+6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
+7. Open a pull request.
+
+## On "release day" in this specific order
+
+### Prerequsites 
+
+⚠️ WAIT! ⚠️ - Please ensure that Ember, Ember CLI and EmberData have each released before proceeding
+
+We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/tool-new-release) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
+
+- install `tool-new-release` - this automates most of the things
+- install 1Password and make sure you have access to the `something` vault
+- install `1password-cli` installed
+
+### Release steps:
 
 <!-- 1. run tool-new-release -->
 1. [Guides PR](#guides)
@@ -24,41 +60,7 @@ On "release day" in this specific order
 1. [Ember Wikipedia](#ember-wikipedia)
 1. [Release bot](#release-bot)
 
-## Prerequsites 
-
-WAIT! - please ensure that Ember, Ember CLI and EmberData have each  
-
-We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/tool-new-release) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
-
-- install `tool-new-release` - this automates most of the things
-- install 1Password and make sure you have access to the `something` vault
-- install `1password-cli` installed
-
-## Create the release blog post
-
-💁 manual process
-
-**NOTE** ember-source, ember-data, and ember-cli must already be released.
-
-1. Generate a new blog post for the release with `ember generate release-blog MAJOR.MINOR` where
-MAJOR.MINOR is the version number, i.e `4.5`. There is a `--authors` option available which
-defaults to the Ember Learning Team.
-3. Open a PR with the template at [https://github.com/ember-learn/ember-blog/pulls](https://github.com/ember-learn/ember-blog/pulls)
-4. Tag core teams to fill in details
-
-## Deprecations
-
-💁 manual process
-
-1. Clone [deprecation-app](https://github.com/ember-learn/deprecation-app).
-2. To see deprecations in `ember-source`, you can visit [https://deprecations.emberjs.com/v3.x/](https://deprecations.emberjs.com/v3.x/).
-3. Check if there are deprecations listed under "Upcoming Features" that are a part of the new release (e.g. `v3.25`). If there are, proceed with this step, if there are not, you can skip to the Guides step.
-4. Find the relevant Markdown file in `/content/ember/v3` folder.
-5. Update the frontmatter `since: "Upcoming Features"` to `since: "v3.25"`.
-6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
-7. Open a pull request.
-
-## Guides
+### Guides
 
 🤖 automated process
 
@@ -79,7 +81,7 @@ Note: If prompted that a guides directory already exists this likely means you h
 
 </details>
 
-## Guides search
+### Guides search
 
 🤖 automated process
 
@@ -99,7 +101,7 @@ Note: If prompted that a guides directory already exists this likely means you h
     Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#updating-the-guides-search).
 </details>
 
-## API documentation
+### API documentation
 
 🤖 automated process
 
@@ -122,7 +124,7 @@ Note: If it's taking a very long time to show up then you probably need to purge
 
 </details>
 
-## Release pages
+### Release pages
 
 💁 manual process
 
@@ -153,7 +155,7 @@ Pro tip: if you're looking for the exact date that a project has released you ca
 
 Note: https://libraries.io/npm/<your package> may not contain all the versions so it may be best to check tags (not releases) in the GitHub project for dates.
 
-## Upgrade Guide
+### Upgrade Guide
 
 💁 manual process
 
@@ -164,7 +166,7 @@ Note: https://libraries.io/npm/<your package> may not contain all the versions s
 5. Run `npm run lint` and `npm test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
 6. Open a pull request, then merge it.
 
-## 7. Glitch Ember starter
+### 7. Glitch Ember starter
 
 🤖 automated process
 
@@ -192,7 +194,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
 
-## 8. Ember Wikipedia
+### 8. Ember Wikipedia
 
 💁 manual process
 
@@ -201,7 +203,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating.
 4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line.
 
-## 9. Release bot
+### 9. Release bot
 
 💁 manual process
 
