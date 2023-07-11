@@ -33,27 +33,29 @@ defaults to the Ember Learning Team.
 6. Repeat steps 2-5 for deprecations in `ember-data`. ([https://deprecations.emberjs.com/ember-data/v3.x](https://deprecations.emberjs.com/ember-data/v3.x))
 7. Open a pull request.
 
-## On "release day" in this specific order
+## On "release day":
 
-### Prerequsites 
+### Prerequisites 
 
 ⚠️ WAIT! ⚠️ - Please ensure that Ember, Ember CLI and EmberData have each released before proceeding
 
 We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/tool-new-release) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
 
 - install `tool-new-release` - this automates most of the things
-- install 1Password and make sure you have access to the `something` vault
-- install `1password-cli` installed
+- install 1Password and make sure you have access to the `Ember CLI` vault
+- install `1password-cli`
+- sign in to `1password-cli`
+- sign in to 1password `Ember CLI` vault
 
-### Release steps:
+### Follow these release steps in this specific order:
 
 <!-- 1. run tool-new-release -->
 1. [Guides PR](#guides)
-1. merge guides PR
+1. [merge guides PR](merge-guides-pr)
 1. [Guides search](#guides-search)   
 1. [API documentation](api-documentation)
-1. merge blog
-1. merge deprecations PR
+1. [merge blog PR](#merge-blog-pr)
+1. [merge deprecations PR](#merge-deprecations-pr)
 1. [Release pages](#release-pages)
 1. [Upgrade Guide](#upgrade-guide)
 1. [Glitch Ember starter](#glitch-ember-starter)
@@ -80,6 +82,10 @@ Note: If prompted that a guides directory already exists this likely means you h
     Instructions are found in [MAINTAINERS.md](https://github.com/ember-learn/guides-source/blob/master/MAINTAINERS.md#deploying-a-new-version).
 
 </details>
+
+### Merge Guides PR
+
+Merge the PR that you generated in the Guides step. Ensure that it is successfully deployed and manually spot-check the Guides before proceeding.
 
 ### Guides search
 
@@ -124,6 +130,14 @@ Note: If it's taking a very long time to show up then you probably need to purge
 
 </details>
 
+### Merge Blog PR
+
+Ensure the Blog post PR is ready to be released (final date checks, check no bug fixes, features or deprecations are missing from each package, double check grammar/spelling, general polish, etc.), and once it is ready merge the PR. Ensure the blog post is deployed.
+
+### Merge Deprecations PR
+
+Ensure the deprecations PR is ready to be merged (ensure no new deprecations have been added that need to be addressed if the PR has been open for some time). Ensure the deprecations PR is deployed.
+
 ### Release pages
 
 💁 manual process
@@ -166,7 +180,7 @@ Note: https://libraries.io/npm/<your package> may not contain all the versions s
 5. Run `npm run lint` and `npm test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
 6. Open a pull request, then merge it.
 
-### 7. Glitch Ember starter
+### Glitch Ember starter
 
 🤖 automated process
 
@@ -194,7 +208,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 ```
 5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
 
-### 8. Ember Wikipedia
+### Ember Wikipedia
 
 💁 manual process
 
@@ -203,7 +217,7 @@ the application is cloned from [ember-new-output](https://github.com/ember-cli/e
 3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating.
 4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line.
 
-### 9. Release bot
+### Release bot
 
 💁 manual process
 
