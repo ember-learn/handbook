@@ -53,7 +53,8 @@ We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/to
 1. [Guides PR](#guides)
 1. [merge guides PR](merge-guides-pr)
 1. [Guides search](#guides-search)   
-1. [API documentation](api-documentation)
+1. [API documentation](#api-documentation)
+1. [API docs search](#api-docs-search)
 1. [merge blog PR](#merge-blog-pr)
 1. [merge deprecations PR](#merge-deprecations-pr)
 1. [Release pages](#release-pages)
@@ -109,26 +110,15 @@ Note: If prompted that a guides directory already exists this likely means you h
 
 ### API documentation
 
-🤖 automated process
+💁 manual process
 
-Run the following command with `tool-new-release`
+Instructions are found in the [README of ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs).
 
-```
-tool-new-release api-docs
-```
+### API Docs Search
 
-Note: This process may take quite a while to run so you should ensure your computer does not sleep during the process.
+💁 manual process
 
-Note: When this succeeds with no errors it still takes a while for the new version to show up in https://api.emberjs.com/ember/release
-
-Note: If it's taking a very long time to show up then you probably need to purge the cache in Fastly. Log into https://fastly.com and click `Purge` and then `Purge all` for `api.emberjs.com`. Even after purging the cache, it may take many hours for the cache to be cleared. It may help to check different browsers in private browser windows.
-
-<details>
-    <summary>Fallback 💁 manual process</summary>
-
-    Instructions are found in the [README of ember-jsonapi-docs](https://github.com/ember-learn/ember-jsonapi-docs#overriding-a-specific-version-of-yuidoc-file-with-a-local-copy-for-core-contributors).
-
-</details>
+Instructions are found in the [README of algolia-index-update-scripts](https://github.com/ember-learn/algolia-index-update-scripts).
 
 ### Merge Blog PR
 
