@@ -7,7 +7,7 @@ the learning team has to make sure some parts of our infrastructure are adequate
 ## Preparation (ideally) before release day: 
 
 1. [Merge Tutorial Updates](#merge-tutorial-updates)
-1. [Release blog post](#release-blog-post)
+1. [Create the release blog post](#create-the-release-blog-post)
 1. [Deprecations](#deprecations)
 
 ### Merge Tutorial Updates
