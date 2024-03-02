@@ -17,6 +17,8 @@ We will employ the use of sub-domains for official Ember projects. Right now we 
 - https://blog.emberjs.com
 - https://help-wanted.emberjs.com
 - https://upgrade.emberjs.com
+- http://new.emberjs.com/
+  - redirects to Stackblitz to start a new Ember app in the browser
 
 Sub-domains are strongly preferred in cases where parts of our sites work best as standalone, separately maintained apps.
 
