@@ -6,8 +6,17 @@ the learning team has to make sure some parts of our infrastructure are adequate
 
 ## Preparation (ideally) before release day: 
 
-1. [Release blog post](#release-blog-post)
+1. [Merge Tutorial Updates](#merge-tutorial-updates)
+1. [Create the release blog post](#create-the-release-blog-post)
 1. [Deprecations](#deprecations)
+
+### Merge Tutorial Updates
+
+💁 manual process
+
+🚨 This process is not well defined and needs to be streamlined ASAP 🚨
+
+Check if there are any [`Tutorial Updates` PRs](https://github.com/ember-learn/guides-source/pulls?q=is%3Apr+%22Tutorial+Updates%22+is%3Aopen) that need to be merged **before ember-cli is released**. If we have missed our window then the `guides/release/tutorial/part-1/orientation.md` will show the **new ember-cli version** and when we snapshot the `release` folder (i.e. copy it to a folder with the previous release number) then the tutorial will be wrong.
 
 ### Create the release blog post
 
