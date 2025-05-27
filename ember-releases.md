@@ -179,37 +179,6 @@ Note: https://libraries.io/npm/<your package> may not contain all the versions s
 5. Run `npm run lint` and `npm test`. (You will likely need to update 1 test assertion. It checks how many features and deprecations can be seen since Ember 3.15 release.)
 6. Open a pull request, then merge it.
 
-### Glitch Ember starter
-
-🤖 automated process
-
-Run the following command with `tool-new-release`
-
-```
-tool-new-release glitch
-```
-<details>
-    <summary>Fallback 💁 manual process</summary>
-Or, use the 💁 manual process fallback:
-
-
-Since generating a new application using ember-cli made Glitch run out of memory,
-the application is cloned from [ember-new-output](https://github.com/ember-cli/ember-new-output).
-
-1. Log in to [https://glitch.com/](https://glitch.com/)
-1. Go to [https://glitch.com/edit/console.html?emberjs](https://glitch.com/edit/console.html?emberjs)
-1. Update the local repository with `git fetch`
-1. Check out the release version with `git reset --hard <VERSION>`. Replace `<VERSION>` with the correct tag, e.g. `v.3.25.0`
-1. Add the following snippet for the Glitch button in `app/index.html`:
-```
-<!-- include the Glitch button to show what the webpage is about and
-  to make it easier for folks to view source and remix -->
-<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-<script src="https://button.glitch.me/button.js"></script>
-```
-5. Edit `package.json` to explicitly include port 4200: `"start": "ember serve -p 4200"`.
-</details>
-
 ### Ember Wikipedia
 
 💁 manual process
