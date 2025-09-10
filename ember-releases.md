@@ -182,13 +182,18 @@ Note: https://libraries.io/npm/<your package> may not contain all the versions s
 Note: The Wikipedia page may have already been updated automatically for the version you are releasing. If that is the case, you can skip this step.
 
 1. Go to [https://en.wikipedia.org/wiki/Ember.js](https://en.wikipedia.org/wiki/Ember.js).
-2. Click the `Edit source` tab (you will likely need to login).
-3. Update the `latest release version`, `latest release date`, `latest preview version` & `latest preview date` in the Infobox if they need updating.
-4. Be sure to update the accessdate for the citation url of the releases page referenced on the `latest release date` line.
+2. Click on the pencil icon next to the version. 
+<img width="352" height="305" alt="Screenshot 2025-09-10 at 17 00 20" src="https://github.com/user-attachments/assets/c9b2728f-4798-4021-8bfb-b2017b518cea" />
+
+3. Add the new version to the bottom of the `software version identifier` list
+   1. Make sure to also add the reference, including the title. The title also needs to have a language, you can set this by clicking the keyboard icon that's popping up.
+   2. After you have clicked published you need to update the ranks of the versions. Click the up-arrow above the circle to make it prefered and set the previous version back to normal by clicking on the circle. 
+<img width="200" height="97" alt="Screenshot 2025-09-10 at 16 52 41" src="https://github.com/user-attachments/assets/07d600b4-dac9-4f16-bc36-43ab73ca4984" />
 
 ### Release bot
 
 💁 manual process
+
 
 1. Go to the core meta channel in Discord.
 2. Mark current release as done with `/release-done blog`.
