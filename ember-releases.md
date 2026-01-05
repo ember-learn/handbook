@@ -48,12 +48,7 @@ defaults to the Ember Learning Team.
 
 ⚠️ WAIT! ⚠️ - Please ensure that Ember, Ember CLI and EmberData have each released before proceeding
 
-We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/tool-new-release) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
-
-- install `tool-new-release` - this automates most of the things (deprecated and soon will not be needed)
 - install 1Password and make sure you have access to the `Ember CLI` vault
-- install `1password-cli`
-- sign in to `1password-cli`
 - sign in to 1password `Ember CLI` vault
 
 ### Follow these release steps in this specific order:
@@ -68,7 +63,6 @@ We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/to
 1. [merge deprecations PR](#merge-deprecations-pr)
 1. [Release pages](#release-pages)
 1. [Upgrade Guide](#upgrade-guide)
-1. [Glitch Ember starter](#glitch-ember-starter)
 1. [Ember Wikipedia](#ember-wikipedia)
 1. [Release bot](#release-bot)
 
@@ -193,7 +187,6 @@ Note: The Wikipedia page may have already been updated automatically for the ver
 ### Release bot
 
 💁 manual process
-
 
 1. Go to the core meta channel in Discord.
 2. Mark current release as done with `/release-done blog`.
