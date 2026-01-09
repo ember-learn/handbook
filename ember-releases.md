@@ -48,9 +48,9 @@ defaults to the Ember Learning Team.
 
 ⚠️ WAIT! ⚠️ - Please ensure that Ember, Ember CLI and EmberData have each released before proceeding
 
-We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/tool-new-release) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
+We have a CLI tool called [`ember-learn-release-tool`](https://github.com/ember-learn/ember-learn-release-tool/) that automates many of the below steps and is recommended. Each of those automated steps has a manual fallback process.
 
-- install `tool-new-release` - this automates most of the things (deprecated and soon will not be needed)
+- `git clone https://github.com/ember-learn/guides-source.git`
 - install 1Password and make sure you have access to the `Ember CLI` vault
 - install `1password-cli`
 - sign in to `1password-cli`
@@ -60,7 +60,7 @@ We have a CLI tool called [`tool-new-release`](https://github.com/ember-learn/to
 
 <!-- 1. run tool-new-release -->
 1. [Guides PR](#guides)
-1. [merge guides PR](merge-guides-pr)
+1. [merge guides PR](#merge-guides-pr)
 1. [Guides search](#guides-search)   
 1. [API documentation](#api-documentation)
 1. [API docs search](#api-docs-search)
@@ -102,7 +102,7 @@ Merge the PR that you generated in the Guides step. Ensure that it is successful
 Run the following command with `ember-learn-release-tool`
 
 ```
-npx ember-learn-release-tool guides-search
+pnpm dlx ember-learn-release-tool guides-search
 ```
 
 Follow the prompts and when it looks like it is done deploying you should test the search on https://guides.emberjs.com/
