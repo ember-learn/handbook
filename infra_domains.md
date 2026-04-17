@@ -8,15 +8,27 @@ We will employ the use of sub-domains for official Ember projects. Right now we 
 
 - https://emberjs.com (apex domain)
   - the main website
+  - source: https://github.com/ember-learn/ember-website
 - https://www.emberjs.com
   - redirects to https://emberjs.com
 - https://guides.emberjs.com
-- https://cli.emberjs.com
+  - documentation source: https://github.com/ember-learn/guides-source
+  - template source: https://github.com/ember-learn/guidemaker-ember-template
+- https://cli.emberjs.com (will soon be deprecated)
+  - https://github.com/ember-learn/cli-guides
 - https://deprecations.emberjs.com
+  - documentation and frontend app source: https://github.com/ember-learn/deprecation-app
 - https://api.emberjs.com
+  - documentation source (extracted from ember.js source code): https://github.com/ember-learn/ember-api-docs-data
+  - frontend app source: https://github.com/ember-learn/ember-api-docs
 - https://blog.emberjs.com
+  - content source: https://github.com/ember-learn/ember-blog
+  - template source: https://github.com/ember-learn/empress-blog-ember-template
 - https://help-wanted.emberjs.com
+  - frontend app source: https://github.com/ember-learn/ember-help-wanted
+  - backend app source: https://github.com/ember-learn/ember-help-wanted-server
 - https://upgrade.emberjs.com
+  - content and frontend app source: https://github.com/ember-learn/upgrade-guide
 - http://new.emberjs.com/
   - redirects to Stackblitz to start a new Ember app in the browser
 
