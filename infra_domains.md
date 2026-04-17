@@ -27,8 +27,10 @@ We will employ the use of sub-domains for official Ember projects. Right now we 
 - https://help-wanted.emberjs.com
   - frontend app source: https://github.com/ember-learn/ember-help-wanted
   - backend app source: https://github.com/ember-learn/ember-help-wanted-server
+  - Note: this is an app and doesn't need to be pre-rendered
 - https://upgrade.emberjs.com
   - content and frontend app source: https://github.com/ember-learn/upgrade-guide
+  - Note: this is an app and doesn't need to be pre-rendered
 - http://new.emberjs.com/
   - redirects to Stackblitz to start a new Ember app in the browser
 
